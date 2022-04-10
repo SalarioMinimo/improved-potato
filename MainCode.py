@@ -19,7 +19,7 @@ for x in range(len(input)):
   if word in functions:
     equation += functions[word]
   elif input[x] in numbers:
-    equation += functions[word]
+    equation += numbers[word]
 
 equation
     
