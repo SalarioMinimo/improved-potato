@@ -11,7 +11,4 @@ input = "dos más dos"
 
 input = word_tokenize(input)
 
-for x in input:
-  equation += x
-
-traslator()
+input
