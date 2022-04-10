@@ -21,5 +21,5 @@ for x in range(len(input)):
   elif input[x] in numbers:
     equation += numbers[word]
 
-equation
+float(equation)
     
