@@ -5,6 +5,7 @@ nltk.download("punkt")
 
 
 fuctions = {"más":"+"}
+numbers = {"dos":"2"}
 equation = ""
 
 input = "dos más dos"
@@ -13,4 +14,11 @@ input = word_tokenize(input)
 
 input
 
-input[0]
+for x in range(len(input)):
+  if input[x] in functions:
+    equation += functions[x]
+  elif input[x] in numbers:
+    equation += functions[x]
+
+equation
+    
