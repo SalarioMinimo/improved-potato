@@ -3,8 +3,8 @@ import nltk
 from nltk.tokenize import word_tokenize
 nltk.download("punkt")
 
-uwu = "Los burritos son alimentos"
+input = "dos más dos"
 
-uwutk = word_tokenize(uwu)
+input = word.tokenize(input)
 
-uwutk
+input
