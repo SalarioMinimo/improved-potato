@@ -15,10 +15,11 @@ input = word_tokenize(input)
 input
 
 for x in range(len(input)):
-  if input[x] in functions:
-    equation += functions[input[x]]
+  word = input[x]
+  if word in functions:
+    equation += functions[word]
   elif input[x] in numbers:
-    equation += functions[input[x]]
+    equation += functions[word]
 
 equation
     
