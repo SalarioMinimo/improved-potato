@@ -1,2 +1,2 @@
 nltk
-click==8.04
+click==8.0.4
