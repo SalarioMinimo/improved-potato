@@ -3,6 +3,6 @@ import nltk
 
 uwu = "Los burritos son alimentos"
 
-uwutk = nltk.tokenize(uwu)
+uwutk = nltk.tokenize.word_tokenize(uwu)
 
 uwutk
