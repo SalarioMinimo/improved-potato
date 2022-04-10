@@ -16,9 +16,9 @@ input
 
 for x in range(len(input)):
   if input[x] in functions:
-    equation += functions[x]
+    equation += functions[input[x]]
   elif input[x] in numbers:
-    equation += functions[x]
+    equation += functions[input[x]]
 
 equation
     
