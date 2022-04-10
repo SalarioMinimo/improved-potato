@@ -3,6 +3,9 @@ import nltk
 from nltk.tokenize import word_tokenize
 nltk.download("punkt")
 
+def addition(n1,n2):
+  return int(n1)+int(n2)
+  
 
 functions = {"más":"+"}
 numbers = {"dos":"2"}
@@ -17,9 +20,7 @@ input
 for x in range(len(input)):
   word = input[x]
   if word in functions:
-    equation += functions[word]
-  elif input[x] in numbers:
-    equation += numbers[word]
+    result = functions[word(input[x-1],input[x+1])]
 
-float(equation)
+result
     
