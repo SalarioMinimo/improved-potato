@@ -5,6 +5,6 @@ nltk.download("punkt")
 
 input = "dos más dos"
 
-input = word.tokenize(input)
+input = word_tokenize(input)
 
 input
