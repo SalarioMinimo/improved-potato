@@ -4,7 +4,7 @@ from nltk.tokenize import word_tokenize
 nltk.download("punkt")
 
 
-fuctions = {más:"+"}
+fuctions = {"más":"+"}
 equation = ""
 
 input = "dos más dos"
