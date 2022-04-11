@@ -12,5 +12,6 @@ class calculator:
   
   def capitalismo(self):
     st.text(self.text)
+    st.title("it works")
     
 ejecutar=calculator
