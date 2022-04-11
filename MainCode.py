@@ -7,7 +7,11 @@ class calculator:
   
   def __init__(self,input):
     self.text=word_tokenize(input)
+    self.envia()
+  
+  def envia(self):
     return self.text
+    
     
 
 
