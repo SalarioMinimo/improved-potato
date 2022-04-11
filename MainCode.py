@@ -9,8 +9,8 @@ class calculator:
     self.text=word_tokenize(input)
     self.envia()
   
-  def envia(self):
-    return self.text
+  def __str__(self):
+    return "uwu"
     
     
 
