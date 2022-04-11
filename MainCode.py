@@ -9,9 +9,8 @@ class calculator:
     self.text=word_tokenize(input)
   
   def __str__(self):
-    return "uwu"
-    
-    
+    return self.text
+ 
 
 
 texto=st.text_area(label="muerte al capital")
