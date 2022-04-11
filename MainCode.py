@@ -4,7 +4,7 @@ from nltk.tokenize import word_tokenize
 nltk.download("punkt")
   
 def capitalism():
-  "Gimme your human rights"
+  st.title("Gimme your human rights")
   
 functions = {"más":capitalism}
 numbers = {"dos":"2"}
