@@ -8,7 +8,7 @@ def addition(n1,n2):
   
 
 functions = {"más":addition}
-numbers = {"dos":"2"}MX
+numbers = {"dos":"2"}
 
 equation = ""
 
