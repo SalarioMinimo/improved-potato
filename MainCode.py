@@ -16,7 +16,7 @@ class calculator:
 
 
 texto=st.text_area(label="muerte al capital")
-tremendo = calculator()
+tremendo = calculator(texto)
 
 tremendo
   
