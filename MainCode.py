@@ -9,7 +9,7 @@ class calculator:
     self.text=word_tokenize(input)
   
   def __str__(self):
-    return self.text
+    return "uwu"
  
 
 
