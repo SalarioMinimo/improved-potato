@@ -3,6 +3,6 @@ import nltk
 from nltk.tokenize import word_tokenize
 nltk.download("punkt")
 
-texto=st.text_area(texto)
+texto=st.text_area()
 st.title(texto)
 
