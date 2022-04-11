@@ -8,7 +8,8 @@ def addition(n1,n2):
   
 
 functions = {"más":addition}
-numbers = {"dos":"2"}
+numbers = {"dos":"2"}MX
+
 equation = ""
 
 input = "2 más 2"
@@ -17,10 +18,3 @@ input = word_tokenize(input)
 
 input
 
-for x in range(len(input)):
-  word = input[x]
-  if word in functions:
-    result = functions[word(input[x-1],input[x+1])]
-
-result
-    
