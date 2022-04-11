@@ -5,8 +5,6 @@ nltk.download("punkt")
   
 class calculator:
   
-
-  
   def __init__(self):
     self.text = "2 más 2"
     self.text = word_tokenize(self.text)
