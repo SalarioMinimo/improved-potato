@@ -15,5 +15,5 @@ input = "2 más 2"
 
 input = word_tokenize(input)
 
-functions[más]
+functions[más]()
 
