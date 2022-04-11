@@ -5,5 +5,5 @@ nltk.download("punkt")
 
 texto=""
 st.text_area(texto)
-texto
+st.title(texto)
 
