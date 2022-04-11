@@ -7,7 +7,6 @@ class calculator:
   
   def __init__(self,input):
     self.text=word_tokenize(input)
-    self.envia()
   
   def __str__(self):
     return "uwu"
