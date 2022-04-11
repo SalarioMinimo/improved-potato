@@ -3,17 +3,16 @@ import nltk
 from nltk.tokenize import word_tokenize
 nltk.download("punkt")
   
-def capitalism():
-  st.title("Gimme your human rights")
+class calculator:
   
-functions = {"más":capitalism}
-numbers = {"dos":"2"}
 
-equation = ""
-
-input = "2 más 2"
-
-input = word_tokenize(input)
-
-functions["más"]()
-
+  
+  def __init__(self):
+    self.text = "2 más 2"
+    self.text = word_tokenize(self.text)
+    capitalismo()
+  
+  def capitalismo(self):
+    st.text(self.text)
+    
+ejecutar=calculator
