@@ -8,8 +8,8 @@ class calculator:
   def __init__(self,input):
     self.text=word_tokenize(input)
   
-  def __str__(self):
-    return str(self.text)
+  def value(self):
+    return "uwu"
  
 
 
