@@ -14,7 +14,7 @@ class calculator:
         self.functions[self.text[x]](x)
     
   def mas(self,index):
-    self.send = self.text[x-1]+self.text[x+1]
+    self.send = self.text[index-1]+self.text[index+1]
     
   
   def __str__(self):
