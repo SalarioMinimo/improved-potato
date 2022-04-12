@@ -9,7 +9,7 @@ class calculator:
     self.send = ""
     self.text=word_tokenize(input)
     self.functions = {"más":self.mas}
-    for x in len(self.text):
+    for x in range(len(self.text)):
       if self.text[x] in self.functions:
         self.functions[self.text[x]](x)
     
