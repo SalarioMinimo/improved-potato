@@ -19,7 +19,7 @@ class calculator:
   def __str__(self):
     return str(self.send)
   
-  self.functions = {"más":self.mas}
+  self.functions = {"más":mas}
 
 
 texto=st.text_area(label="muerte al capital")
