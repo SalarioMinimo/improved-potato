@@ -8,6 +8,7 @@ class calculator:
   def __init__(self,input):
     self.send = ""
     self.text=word_tokenize(input)
+    self.functions = {"más":self.mas}
     for x in self.text:
       if self.text[x] in self.functions:
         self.functions[self.text[x]](x)
@@ -18,8 +19,8 @@ class calculator:
   
   def __str__(self):
     return str(self.send)
+ 
   
-  self.functions = {"más":mas}
 
 
 texto=st.text_area(label="muerte al capital")
