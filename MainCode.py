@@ -12,14 +12,14 @@ class calculator:
       if self.text[x] in self.functions:
         self.functions[self.text[x]](x)
     
-  def más(self,index):
+  def mas(self,index):
     self.send = self.text[x-1]+self.text[x+1]
     
   
   def __str__(self):
     return str(self.send)
   
-  self.functions = {"más":self.más}
+  self.functions = {"más":self.mas}
 
 
 texto=st.text_area(label="muerte al capital")
