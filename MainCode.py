@@ -37,7 +37,7 @@ class calculator:
   
   def raiz(self,index):
     self.text[index]="sqrt("
-    self.text.insert(index+3,-")")
+    self.text.insert(index+2,-")")
     
   
     
