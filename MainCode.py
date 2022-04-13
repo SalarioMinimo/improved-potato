@@ -26,7 +26,7 @@ class calculator:
   def mas(self,index):
     self.text[index]="+"
     
-  def menos(self,index)
+  def menos(self,index):
     self.text[index]="-"
   
   def __str__(self):
