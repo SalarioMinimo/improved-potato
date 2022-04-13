@@ -37,5 +37,7 @@ texto=st.text_area(label="muerte al capital")
 tremendo = str(calculator(texto))
 
 result = sympy.solve(tremendo + (" -resultado"), resultado)
+
+result
 tremendo
   
