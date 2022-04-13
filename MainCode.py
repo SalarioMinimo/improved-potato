@@ -34,11 +34,12 @@ class calculator:
 
 resultado = sympy.symbols("resultado")
 texto=st.text_area(label="muerte al capital")
-tremendo = str(calculator(texto))
+tremendo = sympy.solve(calculator(texto))
 
 result = sympy.solve(tremendo + (" -resultado"), resultado)
 
-sympy.tremendo
+
+
 result[0]
 tremendo
   
