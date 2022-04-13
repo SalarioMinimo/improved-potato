@@ -1,6 +1,7 @@
 import streamlit as st
 import nltk
 from nltk.tokenize import word_tokenize
+from nltk.tokenize.treebank import TreebankWordDetokenizer
 import math
 import sympy
 nltk.download("punkt")
@@ -27,7 +28,7 @@ class calculator:
     
   
   def __str__(self):
-    return join(self.text)
+    return TreebankWordDetokenizer().detokenize(self.text)
  
   
 
