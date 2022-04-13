@@ -21,8 +21,6 @@ class calculator:
       if self.text[x] in self.functions:
         self.functions[self.text[x]](x)
     
-    
-    
   def mas(self,index):
     self.text[index]="+"
     
@@ -34,9 +32,10 @@ class calculator:
  
   
 
-
+resultado = sympy.symbols("resultado")
 texto=st.text_area(label="muerte al capital")
-tremendo = calculator(texto)
+tremendo,result = calculator(texto)
 
+result
 tremendo
   
