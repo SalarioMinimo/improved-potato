@@ -41,5 +41,5 @@ result = sympy.solve(tremendo + (" -resultado"), resultado)
 
 
 result[0]
-tremendo
+st.latex(sympy.sympify(tremendo)
   
