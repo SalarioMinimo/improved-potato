@@ -13,7 +13,7 @@ class calculator:
     
     self.send = ""
     self.text=word_tokenize(input)
-    self.functions = {"más":self.mas,"menos":self.menos}
+    self.functions = {"más":self.mas,"menos":self.menos,"por":self.por}
     
     
     for x in range(len(self.text)):
@@ -26,6 +26,10 @@ class calculator:
     
   def menos(self,index):
     self.text[index]="-"
+    
+  def por(self,index):
+    self.text[index]="*"
+    
   
   def __str__(self):
     return TreebankWordDetokenizer().detokenize(self.text)
