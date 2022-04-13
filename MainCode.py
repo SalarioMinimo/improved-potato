@@ -34,7 +34,7 @@ class calculator:
 
 resultado = sympy.symbols("resultado")
 texto=st.text_area(label="muerte al capital")
-tremendo,result = 5
+tremendo = result = calculator(texto)
 
 result
 tremendo
