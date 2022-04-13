@@ -50,7 +50,7 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
-tremendo = calculator(texto)
+tremendo = sympify(calculator(texto))
 
 
 tremendo
