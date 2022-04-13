@@ -52,7 +52,7 @@ resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
 tremendo = str(calculator(texto))
 
-result = solve(tremendo + (" -resultado"), resultado,numerical=False)
+result = solve(tremendo + (" -resultado"), resultado,set=True)
 
 
 tremendo
