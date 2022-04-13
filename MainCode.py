@@ -27,7 +27,7 @@ class calculator:
     
   
   def __str__(self):
-    return str(self.text)
+    return join(self.text)
  
   
 
