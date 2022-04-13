@@ -14,12 +14,13 @@ class calculator:
     self.send = ""
     self.text=word_tokenize(input)
     self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre}
+    c=1
     
-    
-    for x in range(len(self.text)):
-      
+    while c != 0:
+      c = 0
       if self.text[x] in self.functions:
         self.functions[self.text[x]](x)
+        c += 1
     
   def mas(self,index):
     self.text[index]="+"
