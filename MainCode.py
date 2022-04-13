@@ -36,7 +36,7 @@ class calculator:
     self.text.insert(index+3,")")
   
   def raiz(self,index):
-    self.text[index]="nthroot("
+    self.text[index]="root("
     self.text.insert(index+1,"3,")
     self.text.insert(index+3,")")
     
