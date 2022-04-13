@@ -53,7 +53,7 @@ texto=st.text_area(label="muerte al capital")
 tremendo = str(calculator(texto))
 
 result = solve(tremendo + (" -resultado"), resultado)
-sonicexe = result
+sonicexe = result[0]
 
 sonicexe
 tremendo
