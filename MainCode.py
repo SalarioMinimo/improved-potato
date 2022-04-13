@@ -54,4 +54,5 @@ tremendo = sympify(calculator(texto))
 
 
 tremendo
+N(tremendo)
 
