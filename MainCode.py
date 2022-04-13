@@ -2,8 +2,7 @@ import streamlit as st
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
-import math
-import sympy
+from sympy import *
 nltk.download("punkt")
 
 class calculator:
@@ -13,7 +12,7 @@ class calculator:
     
     self.send = ""
     self.text=word_tokenize(input)
-    self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre}
+    self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre,"raiz":self.raiz}
     c=1
     while c != 0:
       c = 0
@@ -35,6 +34,12 @@ class calculator:
     self.text[index]="/"
     self.text.insert(index-1,"(")
     self.text.insert(index+3,")")
+  
+  def raiz(self.index):
+    self.text.insert(0,"sqrt(")
+    self.text.append(")")
+    
+  
     
   
   def __str__(self):
@@ -42,11 +47,11 @@ class calculator:
  
   
 
-resultado = sympy.symbols("resultado")
+resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
 tremendo = str(calculator(texto))
 
-result = sympy.solve(tremendo + (" -resultado"), resultado)
+result = solve(tremendo + (" -resultado"), resultado)
 
 
 tremendo
