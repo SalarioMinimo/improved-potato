@@ -13,7 +13,7 @@ class calculator:
     
     self.send = ""
     self.text=word_tokenize(input)
-    self.functions = {"más":self.mas,"menos":self.menos,"por":self.por}
+    self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre}
     
     
     for x in range(len(self.text)):
@@ -29,6 +29,11 @@ class calculator:
     
   def por(self,index):
     self.text[index]="*"
+    
+  def entre(self,index):
+    self.text[index]="/"
+    self.text.insert(index-1,"(")
+    self.text.insert(index+1,")")
     
   
   def __str__(self):
