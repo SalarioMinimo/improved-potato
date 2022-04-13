@@ -52,9 +52,8 @@ resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
 tremendo = calculator(texto)
 
-result = solve(tremendo + (" -resultado"), resultado)
 sonicexe = N(result[0])
 
 sonicexe
 tremendo
-result[0]
+
