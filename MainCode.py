@@ -33,7 +33,7 @@ class calculator:
   def entre(self,index):
     self.text[index]="/"
     self.text.insert(index-1,"(")
-    self.text.insert(index+1,")")
+    self.text.insert(index,")")
     
   
   def __str__(self):
