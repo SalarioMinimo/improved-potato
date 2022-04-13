@@ -39,7 +39,6 @@ tremendo = str(calculator(texto))
 result = sympy.solve(tremendo + (" -resultado"), resultado)
 
 
-
+tremendo
 result[0]
-st.latex(sympy.sympify(tremendo)
-  
+
