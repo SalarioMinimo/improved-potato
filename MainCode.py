@@ -3,7 +3,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 import math
-import sympy as sp
+import sympy
 nltk.download("punkt")
 
 class calculator:
@@ -36,6 +36,6 @@ resultado = sympy.symbols("resultado")
 texto=st.text_area(label="muerte al capital")
 tremendo = calculator(texto)
 
-result = sp.solve(tremendo + (" -resultado"), resultado)
+result = sympy.solve(tremendo + (" -resultado"), resultado)
 tremendo
   
