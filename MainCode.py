@@ -38,6 +38,6 @@ tremendo = str(calculator(texto))
 
 result = sympy.solve(tremendo + (" -resultado"), resultado)
 
-result
+result[0]
 tremendo
   
