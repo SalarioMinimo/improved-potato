@@ -27,7 +27,7 @@ class calculator:
     
   
   def __str__(self):
-    return str(self.send)
+    return str(self.text)
  
   
 
