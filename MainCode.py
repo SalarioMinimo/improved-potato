@@ -56,4 +56,4 @@ result = solve(tremendo + (" -resultado"), resultado)
 
 
 tremendo
-result
+result[0]
