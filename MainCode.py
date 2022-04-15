@@ -52,7 +52,7 @@ resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
 tremendo = sympify(calculator(texto),evaluate=False)
 
-
+texto
 tremendo
 resultado=N(tremendo)
 resultado
