@@ -16,7 +16,7 @@ class calculator:
     self.text=word_tokenize(input)
     self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre,"raiz":self.raiz}
     self.references = ("seno")
-    for x in self.text:
+    for x in range(len(self.text)):
       if self.text[x]==",":
         self.text["."]
     c=1
