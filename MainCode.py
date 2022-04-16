@@ -11,7 +11,7 @@ class calculator:
   
   def __init__(self,input):
     
-    global ordinal
+    self.ordinal = {"cuadrada":"2","cubica":"3"}
     self.send = ""
     self.text=word_tokenize(input)
     self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre,"raiz":self.raiz}
@@ -39,8 +39,9 @@ class calculator:
   
   def raiz(self,index):
     self.text[index]="root("
-    self.text[index+1]=ordinal[self.text[index+1]]
-    self.text.insert(index+3,")")
+    self.text[index+1]=self.ordinal[self.text[index+1]]
+    self.text[index+2]=","
+    self.text.insert(index+4,")")
     
   
     
