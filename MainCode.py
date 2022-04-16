@@ -60,6 +60,8 @@ class calculator:
   def seno(self,index):
     self.text[index] = "sin"
     self.text[index+1] = "("
+    counter = 1
+    panner = 1
     while counter != 0:
       if self.text[index+panner] in self.references:
         counter += 1
