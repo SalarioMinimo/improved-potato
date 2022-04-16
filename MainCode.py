@@ -5,6 +5,8 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 from sympy import *
 nltk.download("punkt")
 
+ordinal = {"cuadrada":2,"cubica":3}
+
 class calculator:
   
   def __init__(self,input):
@@ -37,7 +39,7 @@ class calculator:
   
   def raiz(self,index):
     self.text[index]="root("
-    self.text.insert(index+2,",3")
+    self.text[index+1]=ordinal[index+1]
     self.text.insert(index+3,")")
     
   
