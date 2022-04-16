@@ -5,7 +5,7 @@ from nltk.tokenize.treebank import TreebankWordDetokenizer
 from sympy import *
 nltk.download("punkt")
 
-ordinal = {"cuadrada":2,"cubica":3}
+ordinal = {"cuadrada":"2","cubica":"3"}
 
 class calculator:
   
