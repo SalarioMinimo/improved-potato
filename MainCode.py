@@ -49,7 +49,7 @@ class calculator:
         counter -= 1
       panner += 1
     self.text.insert(index+panner,self.ordinal[self.text[index+1]])
-    self.text.del[index+1]
+    del self.text[index+1]
     self.text.insert(index+panner+1,")")
      
     
