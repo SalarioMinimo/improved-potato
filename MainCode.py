@@ -14,8 +14,10 @@ class calculator:
     self.ordinal = {"cuadrada":"2","cubica":"3"}
     self.send = ""
     self.text=word_tokenize(input)
-    self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre,"raiz":self.raiz,"seno":self.seno}
-    self.references = ("seno")
+    self.functions = {"más":self.mas, "menos":self.menos, "por":self.por, "entre":self.entre, "raiz":self.raiz, "seno":self.trig,
+                      "coseno":self.trig, "tangente":self.trig, "arcoseno":self.trig, "arcocoseno":self.trig, "arcotangente":self.trig}
+    self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan"}
+    self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente")
     for x in range(len(self.text)):
       if self.text[x]==",":
         self.text[x]="."
@@ -57,8 +59,8 @@ class calculator:
     self.text[index+1] = "("
     self.text.insert(index+panner,")")
      
-  def seno(self,index):
-    self.text[index] = "sin"
+  def trig(self,index):
+    self.text[index] = self.trigonometric[self.text[index]]
     self.text[index+1] = "("
     counter = 1
     panner = 1
