@@ -18,7 +18,7 @@ class calculator:
     self.references = ("seno")
     for x in range(len(self.text)):
       if self.text[x]==",":
-        self.text["."]
+        self.text[x]="."
     c=1
     while c != 0:
       c = 0
