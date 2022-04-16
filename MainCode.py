@@ -39,7 +39,7 @@ class calculator:
   
   def raiz(self,index):
     self.text[index]="root("
-    self.text[index+1]=ordinal[index+1]
+    self.text[index+1]=global.ordinal[index+1]
     self.text.insert(index+3,")")
     
   
