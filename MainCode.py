@@ -68,7 +68,7 @@ class calculator:
       if self.text[index+panner] == ".":
         counter -= 1
       panner += 1
-    self.text[index+panner] = ")"
+    self.text[index+panner-1] = ")"
     
   
   def __str__(self):
