@@ -11,7 +11,7 @@ class calculator:
   
   def __init__(self,input):
     
-    
+    global ordinal
     self.send = ""
     self.text=word_tokenize(input)
     self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre,"raiz":self.raiz}
@@ -39,7 +39,7 @@ class calculator:
   
   def raiz(self,index):
     self.text[index]="root("
-    self.text[index+1]=global.ordinal[index+1]
+    self.text[index+1]=ordinal[index+1]
     self.text.insert(index+3,")")
     
   
