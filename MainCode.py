@@ -15,7 +15,10 @@ class calculator:
     self.send = ""
     self.text=word_tokenize(input)
     self.functions = {"más":self.mas,"menos":self.menos,"por":self.por,"entre":self.entre,"raiz":self.raiz}
-    self.references = ()
+    self.references = ("seno")
+    for x in self.text:
+      if self.text[x]==",":
+        self.text["."]
     c=1
     while c != 0:
       c = 0
@@ -39,9 +42,9 @@ class calculator:
     self.text.insert(index+3,")")
   
   def raiz(self,index):
-    self.text[index]="root("
+    self.text[index]="root"
     counter = 1
-    panner= 0
+    panner= 1
     while counter != 0:
       if self.text[index+panner] in self.references:
         counter += 1
@@ -51,6 +54,7 @@ class calculator:
     self.text[index+panner-1]=","
     self.text.insert(index+panner,self.ordinal[self.text[index+1]])
     del self.text[index+1]
+    self.text[index+1]="("
     self.text.insert(index+panner+1,")")
      
     
