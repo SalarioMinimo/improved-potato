@@ -16,7 +16,7 @@ class calculator:
     self.text=word_tokenize(input)
     self.functions = {"más":self.mas, "menos":self.menos, "por":self.por, "entre":self.entre, "raiz":self.raiz, "seno":self.trig,
                       "coseno":self.trig, "tangente":self.trig, "arcoseno":self.trig, "arcocoseno":self.trig, "arcotangente":self.trig}
-    self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan"}
+    self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan","arcoseno":"asin","arcocoseno":"acos","arcotangente":"atan"}
     self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente")
     for x in range(len(self.text)):
       if self.text[x]==",":
