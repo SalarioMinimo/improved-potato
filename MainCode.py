@@ -63,6 +63,7 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
+st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
 
 imprime=str(calculator(texto))
