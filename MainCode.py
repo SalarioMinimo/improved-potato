@@ -57,7 +57,6 @@ tremendo = sympify(calculator(texto),evaluate=False)
 
 imprime=str(calculator(texto))
 imprime
-texto
 tremendo
 resultado=N(tremendo)
 resultado
