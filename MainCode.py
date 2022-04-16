@@ -48,7 +48,8 @@ class calculator:
       elif self.text[index+panner] == ".":
         counter -= 1
       panner += 1
-    self.text.insert[index+panner,")"]
+    self.text.insert[index+panner,self.ordinal[index+1]]
+    self.text.insert[index+panner+1,")")
      
     
   
