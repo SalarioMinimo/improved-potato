@@ -46,7 +46,7 @@ class calculator:
     counter = 1
     panner= 1
     while counter != 0:
-      if self.text[index+panner] in self.references:
+      if not self.text[index+panner] in self.references:
         counter += 1
       elif self.text[index+panner] == ".":
         counter -= 1
