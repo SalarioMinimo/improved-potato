@@ -42,6 +42,7 @@ class calculator:
     self.text[index+1]=self.ordinal[self.text[index+1]]
     self.text[index+2]=","
     self.text.insert(index+4,")")
+    self.text[index+3],self.text[index+1] = self.text[index+1],self.text[index+3]
     
   
     
