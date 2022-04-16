@@ -46,7 +46,6 @@ class calculator:
     counter = 1
     panner= 1
     while counter != 0:
-      
       if self.text[index+panner] in self.references:
         counter += 1
       if self.text[index+panner] == ".":
@@ -55,11 +54,19 @@ class calculator:
     self.text[index+panner-1]=","
     self.text.insert(index+panner,self.ordinal[self.text[index+1]])
     del self.text[index+1]
-    self.text[index+1]="("
+    self.text[index+1] = "("
     self.text.insert(index+panner,")")
      
-    
-  
+  def seno(self,index):
+    self.text[index] = "sin"
+    self.text[index+1] = "("
+    while counter != 0:
+      if self.text[index+panner] in self.references:
+        counter += 1
+      if self.text[index+panner] == ".":
+        counter -= 1
+      panner += 1
+    self.text[index+panner] = ")"
     
   
   def __str__(self):
