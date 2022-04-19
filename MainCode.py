@@ -101,7 +101,7 @@ class calculator:
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
 prueba = word_tokenize(texto)
-annotated_text(eval('("no","mames")'))
+annotated_text(eval('("no","mames"),"neta"'))
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
 
