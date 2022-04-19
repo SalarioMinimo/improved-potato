@@ -8,6 +8,24 @@ nltk.download("punkt")
 
 ordinal = {"cuadrada":"2","cubica":"3"}
 
+Annotations = {"seno":"Seno","función"}
+
+
+
+
+def annotate(will_be_annotated):
+  finished_text="" 
+  for x in will_be_annotated:
+    if x in Annotations:
+      finished_text += "(" + Annotations[x] + "),"
+    else:
+      finished_text += "(" + x + "),"
+  return eval(finished_text)
+    
+  
+  
+  
+
 
 class calculator:
   
@@ -82,7 +100,7 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
-annotated_text(("vamos por viejas","albertano"))
+annotated_text(annotate(texto))
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
 
