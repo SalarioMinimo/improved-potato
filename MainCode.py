@@ -42,7 +42,6 @@ class calculator:
     
   def entre(self,index):
     self.text[index]="/"
-    while
     self.text.insert(index-1,"(")
     self.text.insert(index+3,")")
   
