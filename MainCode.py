@@ -8,7 +8,7 @@ nltk.download("punkt")
 
 ordinal = {"cuadrada":"2","cubica":"3"}
 
-Annotations = {"seno":"Seno","función"}
+Annotations = {"seno":'("Seno","función")'}
 
 
 
