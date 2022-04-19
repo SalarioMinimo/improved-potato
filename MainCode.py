@@ -86,7 +86,7 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
-modelo = ["seno"]
+modelo = [sigamos:=("seno")]
 spst.visualize(modelo, texto)
 prueba = word_tokenize(texto)
 st.text(calculator(texto))
