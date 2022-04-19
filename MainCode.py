@@ -14,12 +14,8 @@ Annotations = {"seno":("Seno","función")}
 
 
 def annotate(will_be_annotated):
-  finished_text="" 
-  for x in will_be_annotated:
-    if x in Annotations:
-      finished_text += "(" + Annotations[x] + "),"
-    else:
-      finished_text += "(" + x + "),"
+  finished_text=[]
+  finished_text += Annotations["seno"]
   return finished_text
     
   
