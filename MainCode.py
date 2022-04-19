@@ -7,6 +7,8 @@ nltk.download("punkt")
 
 ordinal = {"cuadrada":"2","cubica":"3"}
 
+def treatment(input):
+
 class calculator:
   
   def __init__(self,input):
