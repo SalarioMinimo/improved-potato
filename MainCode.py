@@ -17,7 +17,7 @@ def annotate(will_be_annotated):
   finished = ''
   for x in will_be_annotated:
     if x in Annotations:
-      finished += "(" + Anottations(x) + ")"
+      finished += "(" + Annotations(x) + ")"
     else:
       finished += "(" + x + ")"
   return finished
