@@ -3,7 +3,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from sympy import *
-from annotated_text import annotated_text
+import spacy
 nltk.download("punkt")
 
 ordinal = {"cuadrada":"2","cubica":"3"}
