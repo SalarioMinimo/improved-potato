@@ -14,9 +14,13 @@ Annotations = {"seno":("Seno","función")}
 
 
 def annotate(will_be_annotated):
-  uwu = ("seno","conchale")
-  owo = ("no","manches")
-  return uwu
+  finished = ''
+  for x in will_be_annotated:
+    if x in Annotations:
+      finished += "(" + Anottations(x) + ")"
+    else:
+      finished += "(" + x + ")"
+  return finished
   
   
   
@@ -96,7 +100,7 @@ class calculator:
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
 prueba = word_tokenize(texto)
-annotated_text(eval('("no","mames")'))
+annotated_text(eval(annotations(prueba)))
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
 
