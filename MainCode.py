@@ -20,7 +20,7 @@ def annotate(will_be_annotated):
       finished_text += "(" + Annotations[x] + "),"
     else:
       finished_text += "(" + x + "),"
-  return eval(finished_text)
+  return finished_text
     
   
   
