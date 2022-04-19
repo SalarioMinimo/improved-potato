@@ -3,7 +3,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from sympy import *
-import spacy_streamlit
+import spacy_streamlit as spst
 nltk.download("punkt")
 
 ordinal = {"cuadrada":"2","cubica":"3"}
@@ -86,6 +86,8 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
+modelo = ["seno"]
+spst.visualize(modelo, texto)
 prueba = word_tokenize(texto)
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
