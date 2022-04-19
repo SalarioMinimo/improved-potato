@@ -14,7 +14,7 @@ Annotations = {"seno":("Seno","función")}
 
 
 def annotate(will_be_annotated):
-  uwu = ("seno","conchale")
+  uwu = [("seno","conchale"),("no","manches")]
   return uwu
   
   
