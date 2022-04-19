@@ -1,5 +1,5 @@
 nltk
 click==8.0.4
-st-annotated-text
+spacy-streamlit
 sympy
 
