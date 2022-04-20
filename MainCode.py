@@ -56,7 +56,7 @@ class calculator:
       panner -= 1
     self.text.insert(index,")")
     self.text.insert(index+panner+1,"(")
-    self.text.insert(index+panner+2,"(")
+    self.text.insert(index+panner+1,"(")
     index += 2
     #panning forward
     counter = 0
@@ -72,7 +72,7 @@ class calculator:
       panner += 1
     self.text.insert(index+1,"(")
     self.text.insert(index+panner,")")
-    self.text.insert(index+panner-1,")")
+    self.text.insert(index+panner,")")
     
 
 
@@ -96,7 +96,6 @@ class calculator:
     del self.text[index+1]
     self.text[index+1] = "("
     self.text.insert(index+panner,")")
-    self.text.insert(index+panner+1,")")
      
   def trig(self,index):
     self.text[index] = self.trigonometric[self.text[index]]
