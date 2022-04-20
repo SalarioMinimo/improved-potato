@@ -65,7 +65,7 @@ class calculator:
     
 
 
-  def sobre(self,index)
+  def sobre(self,index):
     self.text[index]="/"
     self.text.insert(index-1,"(")
     self.text.insert(index+3,")")
