@@ -12,7 +12,7 @@ class formatter:
   
   def __init__(self,input):
     self.input=input
-    self.input=self.input.lowercase()
+    self.input=self.input.ascii_lowercase()
     
   def __str__(self):
     return self.input
