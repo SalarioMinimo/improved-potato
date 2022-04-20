@@ -124,11 +124,8 @@ class calculator:
     return TreebankWordDetokenizer().detokenize(self.text)
  
   
-
-resultado = symbols("resultado")
 texto=st.text_input(label="muerte al capital")
 texto = formatter(texto)
-prueba = word_tokenize(texto)
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
 
