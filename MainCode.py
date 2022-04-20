@@ -16,10 +16,8 @@ class formatter:
           "novena":"9","decima":"10"}
     replace = {"á":"a","é":"e","í":"i","ó":"o","ú":"u"}
     self.text = input.lower()
-    for x in range(len(self.text)):
-      if self.text[x] in replace:
-        self.text[x] = replace[self.text[x]]
-        
+    for x in replace:
+      self.text = self.text.replace(x,replace[x])
     
     
   def __str__(self):
