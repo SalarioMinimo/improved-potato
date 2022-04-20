@@ -59,6 +59,7 @@ class calculator:
     self.text.insert(index+panner,"(")
     index += 3
     #panning forward
+    self.text[index] = "bazinga"
     counter = 0
     panner= 1
     if self.text[index+panner] in self.references:
