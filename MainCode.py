@@ -21,7 +21,7 @@ class formatter:
     
     
   def __str__(self):
-    return self.input
+    return self.text
 
 class calculator:
   
