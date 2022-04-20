@@ -127,9 +127,7 @@ class calculator:
 texto=st.text_input(label="muerte al capital")
 texto = formatter(texto)
 texto
-owo = type(texto)
-owo
-tremendo = sympify(calculator(texto),evaluate=False)
+tremendo = sympify(str(calculator(texto)),evaluate=False)
 
 imprime=str(calculator(texto))
 imprime
