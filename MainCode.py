@@ -134,10 +134,9 @@ class calculator:
 texto=st.text_input(label="muerte al capital")
 texto = str(formatter(texto))
 texto
-tremendo = sympify(calculator(texto),evaluate=False)
-
 imprime=str(calculator(texto))
 imprime
+tremendo = sympify(imprime,evaluate=False)
 tremendo
 resultado=N(tremendo)
 resultado
