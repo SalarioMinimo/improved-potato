@@ -10,9 +10,12 @@ ordinal = {"cuadrada":"2","cubica":"3"}
 
 class formatter:
   
-  def _init_(self,input):
+  def __init__(self,input):
     self.input=input
     self.input=self.input.lowercase()
+    
+  def __str__(self):
+    return self.input
 
 class calculator:
   
@@ -124,6 +127,7 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_input(label="muerte al capital")
+texto = formatter(texto)
 prueba = word_tokenize(texto)
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
