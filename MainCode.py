@@ -8,6 +8,12 @@ nltk.download("punkt")
 
 ordinal = {"cuadrada":"2","cubica":"3"}
 
+class formatter:
+  
+  def _init_(self,input):
+    self.input=input
+    self.input=self.input.lowercase()
+
 class calculator:
   
   def __init__(self,input):
@@ -117,7 +123,7 @@ class calculator:
   
 
 resultado = symbols("resultado")
-texto=st.text_area(label="muerte al capital")
+texto=st.text_input(label="muerte al capital")
 prueba = word_tokenize(texto)
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
