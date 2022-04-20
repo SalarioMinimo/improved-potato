@@ -42,8 +42,10 @@ class calculator:
     
   def entre(self,index):
     self.text[index]="/"
-    counter = 1
+    counter = 0
     panner= -1
+    if self.text[index+panner] == ")":
+      counter = 1
     while counter != 0:
       if self.text[index+panner] == ")":
         counter += 1
