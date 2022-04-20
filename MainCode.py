@@ -6,7 +6,9 @@ from sympy import *
 import annotated_text
 nltk.download("punkt")
 
-
+#ahora tienes que hacer un sistema que permita transformar de numero escrito a texto, no va a ser muy complicado,
+#sigue el plan que tienes en mente, usar solamente las primeras letras para identificar completamente, es el mejor
+#sistema y evita gran parte del error humano.
 
 
 class formatter:
