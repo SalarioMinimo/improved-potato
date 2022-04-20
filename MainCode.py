@@ -55,7 +55,7 @@ class calculator:
         counter -= 1
       panner -= 1
     self.text.insert(index,")")
-    self.text.insert(index+panner,"(")
+    self.text.insert(index+panner+1,"(")
     index += 2
     #panning forward
     counter = 0
@@ -69,7 +69,7 @@ class calculator:
       if self.text[index+panner] == ".":
         counter -= 1
       panner += 1
-    self.text[index+1] = "("
+    self.text[index] = "("
     self.text.insert(index+panner,")")
     
 
