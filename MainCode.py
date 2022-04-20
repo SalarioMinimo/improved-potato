@@ -18,6 +18,8 @@ class formatter:
     self.text = input.lower()
     for x in replace:
       self.text = self.text.replace(x,replace[x])
+    for x in ordinal:
+      self.text = self.text.replace(x,ordinal[x])
     
     
   def __str__(self):
@@ -27,7 +29,6 @@ class calculator:
   
   def __init__(self,input):
     
-    self.ordinal = {"cuadrada":"2","cubica":"3"}
     self.send = ""
     self.text=word_tokenize(input)
     self.functions = {"mas":self.mas, "menos":self.menos, "por":self.por, "sobre":self.sobre, "raiz":self.raiz, "seno":self.trig,
@@ -107,7 +108,7 @@ class calculator:
         counter -= 1
       panner += 1
     self.text[index+panner-1]=","
-    self.text.insert(index+panner,self.ordinal[self.text[index+1]])
+    self.text.insert(index+panner,self.text[index+1])
     del self.text[index+1]
     self.text[index+1] = "("
     self.text.insert(index+panner,")")
