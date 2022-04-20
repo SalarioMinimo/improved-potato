@@ -3,11 +3,10 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from sympy import *
+import st_annotated_text
 nltk.download("punkt")
 
 ordinal = {"cuadrada":"2","cubica":"3"}
-
-def treatment(input):
 
 class calculator:
   
@@ -82,6 +81,7 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
+st_annotated_text.annotated_text(("crimenes","de guerra"))
 prueba = word_tokenize(texto)
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
