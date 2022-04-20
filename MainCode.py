@@ -57,8 +57,11 @@ class calculator:
     self.text.insert(index,")")
     self.text.insert(index+panner,"(")
     #panning forward
-    counter = 1
+    counter = 0
     panner= 1
+    if self.text[index+panner] == "(":
+      counter = 1
+      panner = 2
     while counter != 0:
       if self.text[index+panner] in self.references:
         counter += 1
