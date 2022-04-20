@@ -80,6 +80,8 @@ class calculator:
     if self.text[index+panner] in self.references:
       counter = 1
       panner = 2
+    else:
+      panner = 2
     while counter != 0:
       if self.text[index+panner] in self.references:
         counter += 1
