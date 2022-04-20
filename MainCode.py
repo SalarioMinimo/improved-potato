@@ -72,7 +72,7 @@ class calculator:
       panner += 1
     self.text.insert(index+1,"(")
     self.text.insert(index+panner,")")
-    self.text.insert(index+panner,")")
+    self.text.insert(index+panner+1,")")
     
 
 
