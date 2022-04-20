@@ -15,8 +15,9 @@ class calculator:
     self.ordinal = {"cuadrada":"2","cubica":"3"}
     self.send = ""
     self.text=word_tokenize(input)
-    self.functions = {"más":self.mas, "menos":self.menos, "por":self.por, "entre":self.entre, "raiz":self.raiz, "seno":self.trig,
-                      "coseno":self.trig, "tangente":self.trig, "arcoseno":self.trig, "arcocoseno":self.trig, "arcotangente":self.trig}
+    self.functions = {"más":self.mas, "menos":self.menos, "por":self.por, "sobre":self.sobre, "raiz":self.raiz, "seno":self.trig,
+                      "coseno":self.trig, "tangente":self.trig, "arcoseno":self.trig, "arcocoseno":self.trig, "arcotangente":self.trig
+                     "entre":self.entre}
     self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan","arcoseno":"asin","arcocoseno":"acos","arcotangente":"atan"}
     self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente","raiz")
     for x in range(len(self.text)):
@@ -40,6 +41,31 @@ class calculator:
     self.text[index]="*"
     
   def entre(self,index):
+    self.text[index]="/"
+    counter = 1
+    panner= -1
+    while counter != 0:
+      if self.text[index+panner] == ")":
+        counter += 1
+      if self.text[index+panner] == "(":
+        counter -= 1
+      panner -= 1
+    self.text.insert([index],")")
+    self.text.insert(index+panner,"(")
+    counter = 1
+    panner= 1
+    while counter != 0:
+      if self.text[index+panner] in self.references:
+        counter += 1
+      if self.text[index+panner] == ".":
+        counter -= 1
+      panner += 1
+    self.text[index+1] = "("
+    self.text.insert(index+panner,")")
+    
+
+
+  def sobre(self,index)
     self.text[index]="/"
     self.text.insert(index-1,"(")
     self.text.insert(index+3,")")
@@ -81,7 +107,6 @@ class calculator:
 
 resultado = symbols("resultado")
 texto=st.text_area(label="muerte al capital")
-annotated_text.annotated_text({"muerte":"al capital"})
 prueba = word_tokenize(texto)
 st.text(calculator(texto))
 tremendo = sympify(calculator(texto),evaluate=False)
