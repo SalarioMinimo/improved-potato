@@ -46,6 +46,7 @@ class calculator:
     panner= -1
     if self.text[index+panner] == ")":
       counter = 1
+      panner = -2
     while counter != 0:
       if self.text[index+panner] == ")":
         counter += 1
