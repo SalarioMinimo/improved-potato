@@ -35,7 +35,7 @@ class formatter:
     for x in range(len(identity)):
       for y in range(len(self.text)):
         if self.text[y] in identity[x]:
-          st.text(identity[x][y])
+          st.text(identity[x][self.text[y]])
       
       
     
