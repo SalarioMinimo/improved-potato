@@ -34,7 +34,7 @@ class formatter:
     self.text = word_tokenize(self.text)
     for x in range(len(self.text)):
       if x in identity:
-        print(uwu)
+        st.text(x)
       
       
     
