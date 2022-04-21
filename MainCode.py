@@ -31,7 +31,12 @@ class formatter:
       self.text = self.text.replace(x,replace[x])
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
-    
+    self.text = word_tokenize(self.text)
+    for x in range(len(self.text)):
+      if x in units,tens,hundreds,beyond:
+        print(uwu)
+      
+      
     
     
   def __str__(self):
