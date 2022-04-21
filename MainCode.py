@@ -32,10 +32,10 @@ class formatter:
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
     self.text = word_tokenize(self.text)
-    for x in identity:
+    for x in range(len(identity)):
       for y in range(len(self.text)):
-        if self.text[y] in x:
-          st.text(x[y])
+        if self.text[y] in identity[x]:
+          st.text(identity[x][y])
       
       
     
