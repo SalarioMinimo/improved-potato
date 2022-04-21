@@ -31,7 +31,6 @@ class formatter:
       self.text = self.text.replace(x,replace[x])
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
-     
     
     
     
