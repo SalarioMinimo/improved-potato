@@ -33,7 +33,7 @@ class formatter:
       self.text = self.text.replace(x,ordinal[x])
     self.text = word_tokenize(self.text)
     for x in range(len(self.text)):
-      if x in units,tens,hundreds,beyond:
+      if x in identity:
         print(uwu)
       
       
