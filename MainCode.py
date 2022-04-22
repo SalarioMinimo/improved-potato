@@ -54,7 +54,6 @@ class formatter:
                   del tempo[panner+1]
                   del identity[panner+1]
                   identity[panner] = 2
-                  counter -= 1
                   panner -= 1
                   n_elements += 1
               except:
