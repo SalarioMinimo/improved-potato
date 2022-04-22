@@ -43,7 +43,7 @@ class formatter:
           tempo.append(nu_type[x][self.text[counter]])
           identity.append(id_type[x])
         else:
-          if not self.text[counter] in units or self.text[counter] in tens or self.text[counter] in hundreds or self.text[counter] in beyond:
+          if not (self.text[counter] in units or self.text[counter] in tens or self.text[counter] in hundreds or self.text[counter] in beyond):
             panner = -1
             n_elements = 0
             while True:
