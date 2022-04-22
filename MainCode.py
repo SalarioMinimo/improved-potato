@@ -78,7 +78,7 @@ class calculator:
     self.text=word_tokenize(input)
     self.functions = {"mas":self.mas, "menos":self.menos, "por":self.por, "sobre":self.sobre, "raiz":self.raiz, "seno":self.trig,
                       "coseno":self.trig, "tangente":self.trig, "arcoseno":self.trig, "arcocoseno":self.trig, "arcotangente":self.trig,
-                     "entre":self.entre}
+                     "entre":self.entre,"conjunto":self.conjunto}
     self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan","arcoseno":"asin","arcocoseno":"acos","arcotangente":"atan"}
     self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente","raiz")
     for x in range(len(self.text)):
@@ -163,6 +163,19 @@ class calculator:
   def trig(self,index):
     self.text[index] = self.trigonometric[self.text[index]]
     self.text[index+1] = "("
+    counter = 1
+    panner = 1
+    while counter != 0:
+      if self.text[index+panner] in self.references:
+        counter += 1
+      if self.text[index+panner] == ".":
+        counter -= 1
+      panner += 1
+    self.text[index+panner-1] = ")"
+    
+  def conjunto(self,index):
+    del self.text[index+1]
+    self.text[index] = "("
     counter = 1
     panner = 1
     while counter != 0:
