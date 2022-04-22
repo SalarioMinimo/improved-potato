@@ -162,7 +162,7 @@ class calculator:
      
   def trig(self,index):
     self.text[index] = self.trigonometric[self.text[index]]
-    self.text[index+1] = "(trescientos ve"
+    self.text[index+1] = "("
     counter = 1
     panner = 1
     while counter != 0:
