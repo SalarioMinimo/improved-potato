@@ -36,9 +36,9 @@ class formatter:
     tempo = []
     identity = []
     for y in range(len(self.text)):
-      for x in range(len(identity)):
+      for x in range(len(n_type)):
           if self.text[y] in identity[x]:
-            tempo.append(0,identity[x][self.text[y]])
+            tempo.append(0,n_type[x][self.text[y]])
             st.text(tempo)
 
             
