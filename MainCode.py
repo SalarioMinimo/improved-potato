@@ -67,6 +67,7 @@ class formatter:
     
     
   def __str__(self):
+    self.text = TreebankWordDetokenize-r().detokenize(self.text)
     return self.text
 
 class calculator:
@@ -174,7 +175,8 @@ class calculator:
     
   
   def __str__(self):
-    return TreebankWordDetokenizer().detokenize(self.text)
+    self.text = TreebankWordDetokenizer().detokenize(self.text)
+    return self.text
  
   
 texto=st.text_input(label="muerte al capital")
