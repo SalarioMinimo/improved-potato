@@ -33,13 +33,13 @@ class formatter:
       self.text = self.text.replace(x,ordinal[x])
     self.text = word_tokenize(self.text)
     lock = 0
-    temp = []
+    tempo = []
     identity = []
     for y in range(len(self.text)):
       for x in range(len(identity)):
           if self.text[y] in identity[x]:
-            temp.insert(0,identity[x][self.text[y]])
-            st.text(str(temp))
+            tempo.append(0,identity[x][self.text[y]])
+            st.text(tempo)
 
             
             
