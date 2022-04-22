@@ -25,21 +25,39 @@ class formatter:
     hundreds = {"ciento":"100","doscientos":"200","trescientos":"300","cuatroscientos":"400","quinientos":"500","seiscientos":"600",
                     "setecientos":"700","ochocientos":"800","novecientos":"900"}
     beyond = {"mil":"1000","millon":"1000000","millones":"1000000","billones":"1000000000000","trillones":"1000000000000000000"}
-    n_type = (beyond,hundreds,tens,units)
+    nu_type = (beyond,hundreds,tens,units)
+    id_type = (1,0,0,0)
     self.text = input.lower()
     for x in replace:
       self.text = self.text.replace(x,replace[x])
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
     self.text = word_tokenize(self.text)
-    lock = 0
+    counter = -1
     tempo = []
     identity = []
-    for y in range(len(self.text)):
+    while counter != len(self.text):
+      counter +=1
       for x in range(len(n_type)):
           if self.text[y] in n_type[x]:
             tempo.append(n_type[x][self.text[y]])
-            st.text(tempo)
+            identity.append(id_type[x])
+          elif tempo:
+            panner = -1
+            n_elements = 0
+            while True:
+              panner += 1
+              try:
+                if identity[panner] == 0 and identity[panner+1] == 0:
+                  tempo[panner] = str(int(tempo[panner])+int(tempo[panner]))
+                  del tempo[panner+1]
+                  del identity[panner+1]
+                  identity[panner] = 2
+                  panner -= 1
+                  n_elements += 1
+              except:
+                break    
+            st.text(tempo)   
 
             
             
