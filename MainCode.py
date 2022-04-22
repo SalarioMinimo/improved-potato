@@ -53,7 +53,6 @@ class formatter:
                   tempo[panner] = str(int(tempo[panner])+int(tempo[panner+1]))
                   del tempo[panner+1]
                   del identity[panner+1]
-                  identity[panner] = 2
                   panner -= 1
                   n_elements += 1
               except:
