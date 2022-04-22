@@ -38,8 +38,8 @@ class formatter:
     for y in range(len(self.text)):
       for x in range(len(identity)):
           if self.text[y] in identity[x]:
-            temp.append(str(identity[x][self.text[y]]))
-            st.text(temp)
+            temp.append(identity[x][self.text[y]])
+            st.text(str(temp))
 
             
             
