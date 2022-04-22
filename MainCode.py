@@ -38,28 +38,28 @@ class formatter:
     identity = []
     while counter != len(self.text):
       counter +=1
-        for x in range(len(nu_type)):
-          if self.text[counter] in nu_type[x]:
-            tempo.append(nu_type[x][self.text[counter]])
-            identity.append(id_type[x])
-          else:
-        if tempo:
-          panner = -1
-          n_elements = 0
-          while True:
-            panner += 1
-            try:
-              if identity[panner] == 0 and identity[panner+1] == 0:
-                tempo[panner] = str(int(tempo[panner])+int(tempo[panner+1]))
-                del tempo[panner+1]
-                del identity[panner+1]
-                identity[panner] = 2
-                counter -= 1
-                panner -= 1
-                n_elements += 1
-            except:
-              break    
-          st.text(tempo)   
+      for x in range(len(nu_type)):
+        if self.text[counter] in nu_type[x]:
+          tempo.append(nu_type[x][self.text[counter]])
+          identity.append(id_type[x])
+        else:
+      if tempo:
+        panner = -1
+        n_elements = 0
+        while True:
+          panner += 1
+          try:
+            if identity[panner] == 0 and identity[panner+1] == 0:
+              tempo[panner] = str(int(tempo[panner])+int(tempo[panner+1]))
+              del tempo[panner+1]
+              del identity[panner+1]
+              identity[panner] = 2
+              counter -= 1
+              panner -= 1
+              n_elements += 1
+          except:
+            break    
+        st.text(tempo)   
 
             
             
