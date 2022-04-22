@@ -56,7 +56,8 @@ class formatter:
                   panner -= 1
                   n_elements += 1
               except:
-                break    
+                break  
+            break
             st.text(tempo)   
 
             
