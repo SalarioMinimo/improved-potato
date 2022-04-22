@@ -25,7 +25,7 @@ class formatter:
     hundreds = {"ciento":"100","doscientos":"200","trescientos":"300","cuatroscientos":"400","quinientos":"500","seiscientos":"600",
                     "setecientos":"700","ochocientos":"800","novecientos":"900"}
     beyond = {"mil":"1000","millon":"1000000","millones":"1000000","billones":"1000000000000","trillones":"1000000000000000000"}
-    identity = (beyond,hundreds,tens,units)
+    n_type = (beyond,hundreds,tens,units)
     self.text = input.lower()
     for x in replace:
       self.text = self.text.replace(x,replace[x])
@@ -33,11 +33,12 @@ class formatter:
       self.text = self.text.replace(x,ordinal[x])
     self.text = word_tokenize(self.text)
     lock = 0
-    local = []
+    temp = []
+    identity = []
     for y in range(len(self.text)):
       for x in range(len(identity)):
           if self.text[y] in identity[x]:
-            local += identity[x][self.text[y]]
+            temp.append(identity[x][self.text[y]])
             st.text(local)
 
             
