@@ -42,6 +42,7 @@ class formatter:
         if self.text[counter] in nu_type[x]:
           tempo.append(nu_type[x][self.text[counter]])
           identity.append(id_type[x])
+          st.text(tempo)
         else:
           if tempo:
             panner = -1
