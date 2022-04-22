@@ -39,7 +39,7 @@ class formatter:
       for x in range(len(identity)):
           if self.text[y] in identity[x]:
             temp.append(identity[x][self.text[y]])
-            st.text(local)
+            st.text(temp)
 
             
             
