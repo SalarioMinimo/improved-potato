@@ -39,8 +39,8 @@ class formatter:
     while counter != len(self.text):
       counter +=1
       for x in range(len(nu_type)):
-          if self.text[y] in nu_type[x]:
-            tempo.append(nu_type[x][self.text[y]])
+          if self.text[counter] in nu_type[x]:
+            tempo.append(nu_type[x][self.text[counter]])
             identity.append(id_type[x])
           elif tempo:
             panner = -1
