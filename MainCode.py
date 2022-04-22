@@ -174,7 +174,8 @@ class calculator:
     self.text[index+panner-1] = ")"
     
   def conjunto(self,index):
-    del self.text[index+1]
+    if self.text[index+1] == "de"
+      del self.text[index+1]
     self.text[index] = "("
     counter = 1
     panner = 1
