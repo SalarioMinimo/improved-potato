@@ -38,7 +38,7 @@ class formatter:
     for y in range(len(self.text)):
       for x in range(len(identity)):
           if self.text[y] in identity[x]:
-            temp.append(identity[x][self.text[y]])
+            temp.append(str(identity[x][self.text[y]]))
             st.text(temp)
 
             
@@ -142,7 +142,7 @@ class calculator:
      
   def trig(self,index):
     self.text[index] = self.trigonometric[self.text[index]]
-    self.text[index+1] = "("
+    self.text[index+1] = "(trescientos ve"
     counter = 1
     panner = 1
     while counter != 0:
