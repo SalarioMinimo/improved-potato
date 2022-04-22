@@ -46,7 +46,6 @@ class formatter:
           elif tempo:
             panner = -1
             n_elements = 0
-        except:
             while True:
               panner += 1
               try:
