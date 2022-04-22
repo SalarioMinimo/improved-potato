@@ -36,7 +36,7 @@ class formatter:
     counter = -1
     tempo = []
     identity = []
-    while counter != len(self.text):
+    while counter != len(self.text)-1:
       counter +=1
       for x in range(len(nu_type)):
         if self.text[counter] in nu_type[x]:
