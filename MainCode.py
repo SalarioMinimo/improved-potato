@@ -57,8 +57,8 @@ class formatter:
                   n_elements += 1
               except:
                 break  
+            st.text(tempo)
             break
-            st.text(tempo)   
 
             
             
