@@ -16,7 +16,7 @@ class calculator:
                       "coseno":self.trig, "tangente":self.trig, "arcoseno":self.trig, "arcocoseno":self.trig, "arcotangente":self.trig,
                      "entre":self.entre,"conjunto":self.conjunto,"elevado":self.elevado}
     self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan","arcoseno":"asin","arcocoseno":"acos","arcotangente":"atan"}
-    self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente","raiz")
+    self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente","raiz","elevado")
     for x in range(len(self.text)):
       if self.text[x]==",":
         self.text[x]="."
