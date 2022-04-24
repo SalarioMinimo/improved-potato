@@ -6,85 +6,6 @@ from sympy import *
 import annotated_text
 nltk.download("punkt")
 
-#ahora tienes que hacer un sistema que permita transformar de numero escrito a texto, no va a ser muy complicado,
-#sigue el plan que tienes en mente, usar solamente las primeras letras para identificar completamente, es el mejor
-#sistema y evita gran parte del error humano.
-
-
-class formatter:
-  
-  def __init__(self,input):
-    ordinal = {"cuadrada":"2","cubica":"3","segunda":"2","tercera":"3","cuarta":"4","quinta":"5","sexta":"6","septima":"7","octava":"8",
-          "novena":"9","decima":"10"}
-    replace = {"á":"a","é":"e","í":"i","ó":"o","ú":"u"}
-    units = {"uno":"1","dos":"2","tres":"3","cuatro":"4","cinco":"5","seis":"6","siete":"7","ocho":"8","nueve":"9","diez":"10",
-                "once":"11","doce":"12","trece":"13","catorce":"14","quince":"15","dieciseis":"16","diecisiete":"17","dieciocho":"18",
-                "diecinueve":"19","veinte":"20","veintiuno":"21","veintidos":"22","veintitres":"23","veinticuatro":"24",
-                "veinticinco":"25","veintiseis":"26","veintisiete":"27","veintiocho":"28","veintinueve":"29"}
-    tens = {"treinta":"30","cuarenta":"40","cincuenta":"50","sesenta":"60","setenta":"70","ochenta":"80","noventa":"90"}
-    hundreds = {"ciento":"100","doscientos":"200","trescientos":"300","cuatroscientos":"400","quinientos":"500","seiscientos":"600",
-                    "setecientos":"700","ochocientos":"800","novecientos":"900"}
-    beyond = {"mil":"1000","millon":"1000000","millones":"1000000","billones":"1000000000000","trillones":"1000000000000000000"}
-    nu_type = (beyond,hundreds,tens,units)
-    id_type = (1,0,0,0)
-    self.text = input.lower()
-    for x in replace:
-      self.text = self.text.replace(x,replace[x])
-    for x in ordinal:
-      self.text = self.text.replace(x,ordinal[x])
-    self.text = word_tokenize(self.text)
-    counter = -1
-    delete = 0
-    tempo = []
-    identity = []
-    while counter != len(self.text)-1:
-      counter +=1
-      for x in range(len(nu_type)):
-        if self.text[counter] == "y":
-          delete += 1
-        if self.text[counter] in nu_type[x]:
-          tempo.append(nu_type[x][self.text[counter]])
-          identity.append(id_type[x])
-          delete += 1 
-        else:
-          if (not (self.text[counter] in units or self.text[counter] in tens or self.text[counter] in hundreds or self.text[counter] in beyond)) and self.text[counter] != "y":
-            panner = -1
-            n_elements = 0
-            while True:
-              st.text("funciona")
-              panner += 1
-              try:
-                if identity[panner] == 0 and identity[panner+1] == 0:
-                  st.text("sigue funcionando")
-                  tempo[panner] = str(int(tempo[panner])+int(tempo[panner+1]))
-                  del tempo[panner+1]
-                  del identity[panner+1]
-                  panner -= 1
-                  n_elements += 1
-              except:
-                for _ in range(delete-1):
-                  del self.text[counter - delete]
-                  self.text[counter - delete] = str(tempo[0])
-                counter = counter - delete
-                delete = 0
-                tempo = []
-                identity = []
-                
-                break 
-            st.text(tempo)
-    st.text(tempo)
-    st.text(self.text)
-
-            
-            
-
-      
-    
-    
-  def __str__(self):
-    self.text = TreebankWordDetokenizer().detokenize(self.text)
-    return self.text
-
 class calculator:
   
   def __init__(self,input):
@@ -207,7 +128,6 @@ class calculator:
  
   
 texto=st.text_input(label="muerte al capital")
-texto = formatter(texto)
 texto
 imprime=str(calculator(texto))
 imprime
