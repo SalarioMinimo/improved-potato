@@ -62,9 +62,9 @@ class formatter:
                   panner -= 1
                   n_elements += 1
               except:
-                for _ in range(delete):
+                for _ in range(delete-1):
                   del self.text[counter - delete]
-                  self.text.insert(counter - delete,str(tempo[0]))
+                  self.text[counter - delete] = str(tempo[0])
                 counter = counter - delete +1
                 break 
             st.text(tempo)
