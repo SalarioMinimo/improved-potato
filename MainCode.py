@@ -51,6 +51,7 @@ class formatter:
               panner += 1
               try:
                 if identity[panner] == 0 and identity[panner+1] == 0:
+                  st.text("sigue funcionando")
                   tempo[panner] = str(int(tempo[panner])+int(tempo[panner+1]))
                   del tempo[panner+1]
                   del identity[panner+1]
