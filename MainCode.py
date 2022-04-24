@@ -20,7 +20,7 @@ class calculator:
     for x in range(len(self.text)):
       if self.text[x]==",":
         self.text[x]="."
-    c = 0
+    c = -1
     while True:
       try:
         c+=1
