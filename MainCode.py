@@ -20,13 +20,14 @@ class calculator:
     for x in range(len(self.text)):
       if self.text[x]==",":
         self.text[x]="."
-    c=1
-    while c != 0:
-      c = 0
-      for x in range(len(self.text)):
-        if self.text[x] in self.functions:
+    while True:
+      try:
+        c+=1
+        if self.text[self.c] in self.functions:
           self.functions[self.text[x]](x)
-          c += 1
+            c ==0
+      except:
+        break
     
   def mas(self,index):
     self.text[index]="+"
