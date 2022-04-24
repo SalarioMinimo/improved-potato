@@ -97,8 +97,8 @@ class calculator:
   
   def raiz(self,index):
     self.text[index]="root"
-    counter = 0
-    panner= 1
+    counter = 1
+    panner= 0
     while counter != 0:
       panner += 1
       if self.text[index+panner] in self.references:
