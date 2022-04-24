@@ -97,19 +97,19 @@ class calculator:
   
   def raiz(self,index):
     self.text[index]="root"
-    counter = 1
+    counter = 0
     panner= 1
     while counter != 0:
+      panner += 1
       if self.text[index+panner] in self.references:
         counter += 1
       if self.text[index+panner] == ".":
         counter -= 1
-      panner += 1
-    self.text[index+panner-1]=","
+    self.text[index+panner]=","
     self.text.insert(index+panner,self.text[index+1])
     del self.text[index+1]
     self.text[index+1] = "("
-    self.text.insert(index+panner,")")
+    self.text.insert(index+panner+1,")")
      
   def trig(self,index):
     self.text[index] = self.trigonometric[self.text[index]]
