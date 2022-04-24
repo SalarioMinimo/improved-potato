@@ -47,6 +47,7 @@ class formatter:
             panner = -1
             n_elements = 0
             while True:
+              st.text("funciona")
               panner += 1
               try:
                 if identity[panner] == 0 and identity[panner+1] == 0:
