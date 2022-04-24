@@ -67,6 +67,8 @@ class formatter:
                   self.text[counter - delete] = str(tempo[0])
                 counter = counter - delete
                 delete = 0
+                tempo = []
+                identity = []
                 
                 break 
             st.text(tempo)
