@@ -128,6 +128,8 @@ class calculator:
     self.text[index] = "("
     counter = 1
     panner = 1
+    if self.text[index+1] == "de":
+      del self.text[index+1]
     while counter != 0:
       if self.text[index+panner] in self.references:
         counter += 1
