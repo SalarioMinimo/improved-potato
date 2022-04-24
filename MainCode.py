@@ -68,7 +68,6 @@ class formatter:
                   counter = counter - delete +1
                 break 
             st.text(tempo)
-            break
     st.text(tempo)
     st.text(self.text)
 
