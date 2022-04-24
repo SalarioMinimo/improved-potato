@@ -20,12 +20,13 @@ class calculator:
     for x in range(len(self.text)):
       if self.text[x]==",":
         self.text[x]="."
+    c = 0
     while True:
       try:
         c+=1
-        if self.text[self.c] in self.functions:
-          self.functions[self.text[x]](x)
-            c = 0
+        if self.text[c] in self.functions:
+          self.functions[self.text[c]](c)
+          c = 0
       except:
         break
     
