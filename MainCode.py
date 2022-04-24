@@ -63,11 +63,14 @@ class formatter:
                   n_elements += 1
               except:
                 for _ in range(delete):
-                  del self.text[counter-delete]
+                  del self.text[counter - delete]
+                  self.text.insert(counter - delete)
+                  counter = counter - delete +1
                 break 
             st.text(tempo)
             break
     st.text(tempo)
+    st.text(self.text)
 
             
             
