@@ -59,6 +59,7 @@ class formatter:
                 break  
             st.text(tempo)
             break
+    st.text(tempo)
 
             
             
