@@ -64,7 +64,7 @@ class formatter:
               except:
                 for _ in range(delete):
                   del self.text[counter - delete]
-                  self.text.insert(counter - delete)
+                  self.text.insert(counter - delete,str(tempo[0]))
                   counter = counter - delete +1
                 break 
             st.text(tempo)
