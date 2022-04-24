@@ -73,7 +73,7 @@ class calculator:
     self.text.insert(index+panner,")")
     self.text.insert(index+1,"(")
     
-  def elevado(self,index)
+  def elevado(self,index):
     del self.text[index]
     self.text[index] == "**"
     counter = 1
