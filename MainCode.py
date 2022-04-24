@@ -75,7 +75,7 @@ class calculator:
     
   def elevado(self,index):
     del self.text[index]
-    self.text[index] == "**"
+    self.text[index-1] == "**"
     counter = 1
     panner= 0
     while counter != 0:
