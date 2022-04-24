@@ -115,14 +115,14 @@ class calculator:
     self.text[index] = self.trigonometric[self.text[index]]
     self.text[index+1] = "("
     counter = 1
-    panner = 1
+    panner = 0
     while counter != 0:
+      panner += 1
       if self.text[index+panner] in self.references:
         counter += 1
       if self.text[index+panner] == ".":
         counter -= 1
-      panner += 1
-    self.text[index+panner-1] = ")"
+    self.text[index+panner] = ")"
     
   def conjunto(self,index):
     self.text[index] = "("
