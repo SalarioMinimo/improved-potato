@@ -26,7 +26,7 @@ class calculator:
         c+=1
         if self.text[c] in self.functions:
           self.functions[self.text[c]](c)
-          c = 0
+          c = -1
       except:
         break
     
