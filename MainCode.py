@@ -106,7 +106,7 @@ class calculator:
       if self.text[index+panner] == ".":
         counter -= 1
     self.text[index+panner]=","
-    self.text.insert(index+panner,self.text[index+1])
+    self.text.insert(index+panner+1,self.text[index+1])
     del self.text[index+1]
     self.text[index+1] = "("
     self.text.insert(index+panner+1,")")
