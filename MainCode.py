@@ -34,16 +34,20 @@ class formatter:
       self.text = self.text.replace(x,ordinal[x])
     self.text = word_tokenize(self.text)
     counter = -1
+    delete = 0
     tempo = []
     identity = []
     while counter != len(self.text)-1:
       counter +=1
       for x in range(len(nu_type)):
+        if self.text[counter] == "y":
+          delete += 1
         if self.text[counter] in nu_type[x]:
           tempo.append(nu_type[x][self.text[counter]])
           identity.append(id_type[x])
+          delete += 1 
         else:
-          if not (self.text[counter] in units or self.text[counter] in tens or self.text[counter] in hundreds or self.text[counter] in beyond):
+          if (not (self.text[counter] in units or self.text[counter] in tens or self.text[counter] in hundreds or self.text[counter] in beyond)) and self.text[counter] != "y":
             panner = -1
             n_elements = 0
             while True:
@@ -58,7 +62,9 @@ class formatter:
                   panner -= 1
                   n_elements += 1
               except:
-                break  
+                for _ in range(delete):
+                  del self.text[counter-delete]
+                break 
             st.text(tempo)
             break
     st.text(tempo)
