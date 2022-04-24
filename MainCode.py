@@ -66,6 +66,8 @@ class formatter:
                   del self.text[counter - delete]
                   self.text[counter - delete] = str(tempo[0])
                 counter = counter - delete +1
+                delete = 0
+                
                 break 
             st.text(tempo)
     st.text(tempo)
