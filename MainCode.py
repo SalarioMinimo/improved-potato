@@ -8,7 +8,7 @@ nltk.download("punkt")
 
 class sidebar:
   
-  __init__(self):
+  def __init__(self):
     st.sidebar.text["pepe pecas pica papas"]
 
 class calculator:
