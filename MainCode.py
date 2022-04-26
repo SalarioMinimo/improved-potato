@@ -6,6 +6,9 @@ from sympy import *
 import annotated_text
 nltk.download("punkt")
 
+class sidebar:
+  st.sidebar.text["pepe pecas pica papas"]
+
 class calculator:
   
   def __init__(self,input):
