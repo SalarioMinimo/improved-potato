@@ -10,7 +10,7 @@ class sidebar:
   
   def __init__(self):
     show = st.sidebar.title("a ver si esto funciona")
-    show = st.sidebar.text("esto va a ser la documentación)
+    show = st.sidebar.text("esto va a ser la documentación")
 
 class calculator:
   
