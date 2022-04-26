@@ -146,7 +146,9 @@ class calculator:
     self.text = TreebankWordDetokenizer().detokenize(self.text)
     return self.text
  
-  
+
+
+execute = sidebar()
 texto=st.text_input(label="muerte al capital")
 texto
 imprime=str(calculator(texto))
