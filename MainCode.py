@@ -7,7 +7,9 @@ import annotated_text
 nltk.download("punkt")
 
 class sidebar:
-  st.sidebar.text["pepe pecas pica papas"]
+  
+  __init__(self):
+    st.sidebar.text["pepe pecas pica papas"]
 
 class calculator:
   
