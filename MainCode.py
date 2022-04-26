@@ -9,7 +9,7 @@ nltk.download("punkt")
 class sidebar:
   
   def __init__(self):
-    show = st.sidebar.text("a ver si esto funciona")
+    show = st.sidebar.title("a ver si esto funciona")
 
 class calculator:
   
