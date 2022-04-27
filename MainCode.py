@@ -9,7 +9,10 @@ nltk.download("punkt")
 class sidebar:
   
   def __init__(self):
-    if not show:
+    try:
+      if not show:
+        self.selection = 0
+    except:
       self.selection = 0
     Selections = {0:self.selector,1:self.explanation}
     Selections[self.selection]()
