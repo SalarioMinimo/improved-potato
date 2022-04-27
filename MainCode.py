@@ -11,10 +11,14 @@ class sidebar:
   def __init__(self):
 
     parámetro = st.sidebar.button(label="xd",on_click=self.explanation)
+    parámetro = st.sidebar.button(label="xD",on_click=self.expluwu)
     show = st.sidebar.text(parámetro)
     
   def explanation(self):
     show = st.sidebar.text("este es un nuevo texto.")
+    
+  def expluwu(self):
+    show = st.sidebar.text("este es otro nuevo texto")
 
 class calculator:
   
