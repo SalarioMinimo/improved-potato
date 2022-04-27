@@ -14,7 +14,7 @@ class sidebar:
     show = st.sidebar.button(label="xd",on_click=self.calculator)
     
   def explanation(self):
-    show = st.sidebar.text("este es un nuevo texto.)
+    show = st.sidebar.text("este es un nuevo texto.")
 
 class calculator:
   
