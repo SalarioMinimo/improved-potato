@@ -11,7 +11,7 @@ class sidebar:
   def __init__(self):
 
     parámetro = st.sidebar.button(label="xd",on_click=self.explanation)
-    show = st.sidebar.(parámetro)
+    show = st.sidebar.text(parámetro)
     
   def explanation(self):
     show = st.sidebar.text("este es un nuevo texto.")
