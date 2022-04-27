@@ -9,10 +9,25 @@ nltk.download("punkt")
 class sidebar:
   
   def __init__(self):
-
-    parámetro = st.sidebar.button(label="xd",on_click=self.explanation)
-    parámetro = st.sidebar.button(label="xD",on_click=self.expluwu)
-    show = st.sidebar.text(parámetro)
+    if not show:
+      self.selection = 0
+    Selections = {0:self.selector,1:self.explanation}
+    Selections[self.selection]()
+    
+    self.selector()
+    
+    
+  def selector(self):
+    show = st.sidebar.title("Una calculadora más natural")
+    show = st.sidebar.text("las matemáticas tienen que ser más humanas.")
+    show = st.sideabar.button(label="Funciones")
+    show = st.sidebar.button(label="Introducción",on_click=self.changer,args=1)
+    
+  def changer(self,selection):
+    self.Selections = selection
+    
+    
+    
     
   def explanation(self):
     show = st.sidebar.text("este es un nuevo texto.")
