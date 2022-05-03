@@ -21,7 +21,7 @@ class str_formatter:
 
     def __str__(self):
       
-      return self.text
+      return str(self.text)
     
 class calculator:
   
@@ -163,7 +163,7 @@ class calculator:
 
 
 texto=st.text_input(label="muerte al capital")
-texto = str(str_formatter(texto))
+texto = str_formatter(texto)
 texto
 imprime=str(calculator(texto))
 imprime
