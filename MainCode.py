@@ -6,37 +6,23 @@ from sympy import *
 import annotated_text
 nltk.download("punkt")
 
-class sidebar:
-  
-  def __init__(self):
-    try:
-      if not show:
-        self.selection = 0
-    except:
-      self.selection = 0
-    Selections = {0:self.selector,1:self.explanation}
-    Selections[self.selection]()
-    
-    self.selector()
-    
-    
-  def selector(self):
-    show = st.sidebar.title("Una calculadora más natural")
-    show = st.sidebar.text("las matemáticas tienen que ser más humanas.")
-    show = st.sidebar.button(label="Introducción",on_click=self.changer,args=1)
-    
-  def changer(self,selection):
-    self.Selections = selection
-    
-    
-    
-    
-  def explanation(self):
-    show = st.sidebar.text("este es un nuevo texto.")
-    
-  def expluwu(self):
-    show = st.sidebar.text("este es otro nuevo texto")
+class formatter:
 
+  def __main__(self,input):
+    
+    ordinal = {"cuadrada":"2","cubica":"3","segunda":"2","tercera":"3","cuarta":"4","quinta":"5","sexta":"6","septima":"7","octava":"8",
+          "novena":"9","decima":"10"}
+    replace = {"á":"a","é":"e","í":"i","ó":"o","ú":"u"}
+    self.text = input.lower()
+    for x in replace:
+      self.text = self.text.replace(x,replace[x])
+    for x in ordinal:
+      self.text = self.text.replace(x,ordinal[x])
+
+    def __str__(self):
+      
+      return self.text
+    
 class calculator:
   
   def __init__(self,input):
@@ -178,6 +164,7 @@ class calculator:
 
 execute = sidebar()
 texto=st.text_input(label="muerte al capital")
+texto = formatter(texto)
 texto
 imprime=str(calculator(texto))
 imprime
