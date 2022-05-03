@@ -4,7 +4,7 @@ from nltk.tokenize import word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from sympy import *
 import annotated_text
-import enchant
+from spellchecker import SpellChecker
 nltk.download("punkt")
 
 class str_formatter:
