@@ -13,7 +13,8 @@ class str_formatter:
     spell = SpellChecker(language=None, case_sensitive=True)
     spell.word_frequency.load_text_file('Dictionary.txt')
     st.text(spell["seno"])
-    corrections = spell.unknown("seno coseno tangente arcozeno")
+    texto = "seno coseno tankente arcozeno" 
+    corrections = spell.unknown(texto.split(" "))
     st.text(corrections)
     
     ordinal = {"cuadrada":"2","cubica":"3","segunda":"2","tercera":"3","cuarta":"4","quinta":"5","sexta":"6","septima":"7","octava":"8",
