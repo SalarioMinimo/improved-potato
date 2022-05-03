@@ -19,6 +19,7 @@ class str_formatter:
       self.text = self.text.replace(x,replace[x])
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
+    st.text(self.text)
 
     def __str__(self):
       self.text = str(self.text)
@@ -164,7 +165,7 @@ class calculator:
 
 
 texto=st.text_input(label="muerte al capital")
-texto = str(str_formatter(texto))
+texto = str_formatter(texto)
 texto
 imprime=str(calculator(texto))
 imprime
