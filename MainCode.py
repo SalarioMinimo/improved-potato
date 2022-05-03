@@ -167,6 +167,7 @@ class calculator:
 texto=st.text_input(label="muerte al capital")
 texto = str_formatter(texto)
 texto
+st.error("capitalismo")
 imprime=str(calculator(texto))
 imprime
 tremendo = sympify(imprime,evaluate = false)
