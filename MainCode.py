@@ -23,7 +23,6 @@ class sidebar:
   def selector(self):
     show = st.sidebar.title("Una calculadora más natural")
     show = st.sidebar.text("las matemáticas tienen que ser más humanas.")
-    show = st.sideabar.button(label="Funciones")
     show = st.sidebar.button(label="Introducción",on_click=self.changer,args=1)
     
   def changer(self,selection):
