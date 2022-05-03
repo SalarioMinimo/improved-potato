@@ -21,9 +21,9 @@ class str_formatter:
       self.text = self.text.replace(x,ordinal[x])
 
 
-    def __str__(self):
-      st.text(self.text)
-      return self.text
+  def __str__(self):
+    st.text(self.text)
+    return self.text
     
 class calculator:
   
