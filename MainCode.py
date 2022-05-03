@@ -13,7 +13,7 @@ class str_formatter:
     spell = SpellChecker(language=None, case_sensitive=True)
     spell.word_frequency.load_text_file('Dictionary.txt')
     st.text(spell["seno"])
-    texto = "seno coseno tankeunete arcozeni"
+    texto = "seno coseno tangeunete arcozeni"
     corrections = spell.unknown(texto.split(" "))
     for word in corrections:
       st.text(spell.correction(word))
