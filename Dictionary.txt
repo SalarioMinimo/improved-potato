@@ -1,0 +1,10 @@
+seno
+coseno
+tangente
+arcoseno
+arcocoseno
+arcotangente
+por
+mas
+menos
+entre
