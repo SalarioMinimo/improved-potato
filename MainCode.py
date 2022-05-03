@@ -12,6 +12,7 @@ class str_formatter:
   def __init__(self,input):
     
     dictionary = enchant.request_pwl_dict("Dictionary.txt")
+    st.text(dictionary)
     
     ordinal = {"cuadrada":"2","cubica":"3","segunda":"2","tercera":"3","cuarta":"4","quinta":"5","sexta":"6","septima":"7","octava":"8",
           "novena":"9","decima":"10"}
