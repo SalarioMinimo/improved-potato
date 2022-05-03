@@ -13,11 +13,13 @@ class str_formatter:
     ordinal = {"cuadrada":"2","cubica":"3","segunda":"2","tercera":"3","cuarta":"4","quinta":"5","sexta":"6","septima":"7","octava":"8",
           "novena":"9","decima":"10"}
     replace = {"á":"a","é":"e","í":"i","ó":"o","ú":"u"}
+    
     self.text = input.lower()
     for x in replace:
       self.text = self.text.replace(x,replace[x])
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
+    return input
 
     def __str__(self):
       
@@ -164,7 +166,7 @@ class calculator:
 
 
 texto=st.text_input(label="muerte al capital")
-texto = str_formatter(str(texto))
+texto = str_formatter(texto)
 texto
 imprime=str(calculator(texto))
 imprime
