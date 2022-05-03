@@ -2,4 +2,4 @@ nltk
 click==8.0.4
 st_annotated_text
 sympy
-enchant
+pyenchant
