@@ -164,7 +164,7 @@ class calculator:
 
 
 texto=st.text_input(label="muerte al capital")
-texto = str_formatter(texto)
+texto = str_formatter(str(texto))
 texto
 imprime=str(calculator(texto))
 imprime
