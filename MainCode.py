@@ -162,7 +162,6 @@ class calculator:
  
 
 
-execute = sidebar()
 texto=st.text_input(label="muerte al capital")
 texto = formatter(texto)
 texto
