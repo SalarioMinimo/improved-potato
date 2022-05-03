@@ -6,7 +6,7 @@ from sympy import *
 import annotated_text
 nltk.download("punkt")
 
-class formatter:
+class str_formatter:
 
   def __main__(self,input):
     
@@ -163,7 +163,7 @@ class calculator:
 
 
 texto=st.text_input(label="muerte al capital")
-texto = formatter(texto)
+texto = str_formatter(texto)
 texto
 imprime=str(calculator(texto))
 imprime
