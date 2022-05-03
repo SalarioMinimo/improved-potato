@@ -19,11 +19,12 @@ class str_formatter:
       self.text = self.text.replace(x,replace[x])
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
+    self.uwu(self.text)
 
 
-    def __str__(self):
-      st.text(self.text)
-      return self.text
+    def uwu(self,input):
+      st.text(input)
+      return input
     
 class calculator:
   
