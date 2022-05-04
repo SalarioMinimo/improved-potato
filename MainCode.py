@@ -10,24 +10,35 @@ nltk.download("punkt")
 class str_formatter:
 
   def __init__(self,input):
-    self.text = input.lower()
-    spell = SpellChecker(language=None, case_sensitive=True)
-    spell.word_frequency.load_text_file('Dictionary.txt')
-    corrections = spell.unknown(texto.split(" "))
-    for word in corrections:
-      self.text = self.text.replace(word,spell.correction(word))
-      st.text(self.text)
-    st.text(corrections)
     
     ordinal = {"cuadrada":"2","cubica":"3","segunda":"2","tercera":"3","cuarta":"4","quinta":"5","sexta":"6","septima":"7","octava":"8",
           "novena":"9","decima":"10"}
     replace = {"á":"a","é":"e","í":"i","ó":"o","ú":"u"}
     
-
+    self.text = input.lower()
     for x in replace:
       self.text = self.text.replace(x,replace[x])
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
+    
+    to_correct = word_tokenize(self.text)
+    sentence = []
+    for x in range(len(to_correct)):
+      sentence.append(to_correct[x])
+      
+    
+    spell = SpellChecker(language=None, case_sensitive=True)
+    spell.word_frequency.load_text_file('Dictionary.txt')
+    corrections = spell.unknown(sentence)
+    for word in corrections:
+      self.text = self.text.replace(word,spell.correction(word))
+      st.text(self.text)
+    st.text(corrections)
+    
+
+    
+
+
 
 
   def __str__(self):
