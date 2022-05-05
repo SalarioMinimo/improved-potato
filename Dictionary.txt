@@ -15,3 +15,14 @@ de
 ,
 la
 a
+cuadrada
+cubica
+segunda
+tercera
+cuarta
+quinta
+sexta
+septima
+octava 
+novena
+decima
