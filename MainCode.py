@@ -32,9 +32,9 @@ class str_formatter:
     corrections = spell.unknown(sentence)
     for word in corrections:
       self.text = self.text.replace(word,spell.correction(word))
-      st.text(self.text)
     st.text(corrections)
-    
+    st.text(self.text)
+   
 
     
 
