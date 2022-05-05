@@ -15,6 +15,7 @@ de
 ,
 la
 a
+pi
 cuadrada
 cubica
 segunda
