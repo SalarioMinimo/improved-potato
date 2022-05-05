@@ -18,14 +18,11 @@ class str_formatter:
     self.text = input.lower()
     for x in replace:
       self.text = self.text.replace(x,replace[x])
-    for x in ordinal:
-      self.text = self.text.replace(x,ordinal[x])
     
     to_correct = word_tokenize(self.text)
     sentence = []
     for x in range(len(to_correct)):
       sentence.append(to_correct[x])
-      
     
     spell = SpellChecker(language=None, case_sensitive=True)
     spell.word_frequency.load_text_file('Dictionary.txt')
@@ -35,7 +32,8 @@ class str_formatter:
     st.text(corrections)
     st.text(self.text)
    
-
+    for x in ordinal:
+      self.text = self.text.replace(x,ordinal[x])
     
 
 
@@ -187,7 +185,6 @@ class calculator:
 texto=st.text_input(label="muerte al capital")
 texto = str(str_formatter(texto))
 texto
-st.error("capitalismo")
 imprime=str(calculator(texto))
 imprime
 tremendo = sympify(imprime,evaluate = false)
