@@ -264,7 +264,7 @@ class calculator:
     del self.text[index]
     self.text[index] = "**"
     counter = 1
-    panner= 0
+    panner= -1
     while counter != 0:
       panner += 1
       if self.text[index+panner] in self.references:
