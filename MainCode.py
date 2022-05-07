@@ -73,7 +73,6 @@ class str_formatter:
     corrections = spell.unknown(sentence)
     for word in corrections:
       self.text = self.text.replace(word,spell.correction(word))
-    st.text(corrections)
    
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
