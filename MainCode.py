@@ -71,7 +71,6 @@ class str_formatter:
     for word in corrections:
       self.text = self.text.replace(word,spell.correction(word))
     st.text(corrections)
-    st.text(self.text)
    
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
