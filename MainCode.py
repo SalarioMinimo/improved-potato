@@ -239,7 +239,7 @@ class calculator:
    self.text[index+1] = "("
    panner=0
    while True:
-     if not self.text[index+panner] == "y":
+     if not self.text[index+panner] == "sobre":
        panner += 1
      else:
        break
