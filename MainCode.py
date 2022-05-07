@@ -39,7 +39,7 @@ class side_bar:
   def Funcionamiento(self):
     st.title("¿Cómo se utiliza esta calculadora?")
     st.markdown("Su funcionamiento gira en torno a algo parecido a funciones, primero se llama a una función y después se sigue la sintaxis para que el programa pueda reordenar los valores; por ejemplo:")
-    st.code("seno de 25.")
+    st.code("Seno de 25.")
 
 
 
