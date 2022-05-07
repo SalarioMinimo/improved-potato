@@ -157,7 +157,7 @@ class calculator:
      if not self.text[index+panner] == "y":
        panner += 1
      else:
-       Break
+       break
    self.text[index+panner] = "/"
    self.text.insert(index+panner,")")
    self.text.insert(index+panner+2,"(")
