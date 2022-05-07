@@ -48,9 +48,9 @@ class side_bar:
     st.subheader("Función: Conjunto")
     st.markdown("Se traduce en un parentesis, con el fin de evaluar varios términos primero.")
     st.text("string:")
-    st.code("Conjunto de 2 mas 3 menos 6.")
+    st.code("Conjunto de 2 mas 3, por 6")
     st.text("traducción:")
-    st.code("( 2 + 3 - 6 )")
+    st.code("( 2 + 3) * 6")
 
 
 
