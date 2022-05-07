@@ -174,7 +174,7 @@ class calculator:
         break
     for x in range(len(self.text)): 
       if self.text[x]==",":
-        self.text[x]="."
+        self.text[x]=";"
         
         
      
@@ -226,7 +226,7 @@ class calculator:
     while counter != 0:
       if self.text[index+panner] in self.references:
         counter += 1
-      if self.text[index+panner] == ".":
+      if self.text[index+panner] == ";":
         counter -= 1
       panner += 1
     self.text.insert(index+panner,")")
@@ -252,7 +252,7 @@ class calculator:
    while counter != 0:
      if self.text[index+panner] in self.references:
        counter += 1
-     if self.text[index+panner] == ".":
+     if self.text[index+panner] == ";":
        counter -= 1
      panner += 1
    self.text[index+panner] = ")"
@@ -267,7 +267,7 @@ class calculator:
       panner += 1
       if self.text[index+panner] in self.references:
         counter += 1
-      if self.text[index+panner] == ".":
+      if self.text[index+panner] == ";":
         counter -= 1
     self.text[index+panner]=")"
     self.text[index+1] = "("
@@ -280,7 +280,7 @@ class calculator:
       panner += 1
       if self.text[index+panner] in self.references:
         counter += 1
-      if self.text[index+panner] == ".":
+      if self.text[index+panner] == ";":
         counter -= 1
     self.text[index+panner]=","
     self.text.insert(index+panner+1,self.text[index+1])
@@ -297,7 +297,7 @@ class calculator:
       panner += 1
       if self.text[index+panner] in self.references:
         counter += 1
-      if self.text[index+panner] == ".":
+      if self.text[index+panner] == ";":
         counter -= 1
     self.text[index+panner] = ")"
     
@@ -310,7 +310,7 @@ class calculator:
     while counter != 0:
       if self.text[index+panner] in self.references:
         counter += 1
-      if self.text[index+panner] == ".":
+      if self.text[index+panner] == ";":
         counter -= 1
       panner += 1
     self.text[index+panner-1] = ")"
