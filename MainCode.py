@@ -177,7 +177,7 @@ class calculator:
        counter -= 1
      panner += 1
    self.text[index+panner] = ")"
-   
+   self.text.insert(index+panner,")")
     
   def elevado(self,index):
     del self.text[index]
@@ -227,7 +227,6 @@ class calculator:
       if self.text[index+panner] == ".":
         counter -= 1
     self.text[index+panner] = ")"
-    self.text.insert(index+panner,")")
     
   def conjunto(self,index):
     self.text[index] = "("
