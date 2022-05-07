@@ -105,6 +105,7 @@ class calculator:
     c = -1 
     while True:
       try:
+        st.text(self.text)
         c += 1
         if self.text[c] in self.references:
           counter += 1
@@ -114,6 +115,8 @@ class calculator:
           self.text[c] = ","
           for x in range(counter-1):
             self.text.insert(c,",")
+      except:
+       break
             
         
         
