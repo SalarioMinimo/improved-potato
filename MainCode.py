@@ -60,8 +60,10 @@ class str_formatter:
     self.text = input.lower()
     for x in replace:
       self.text = self.text.replace(x,replace[x])
-    
+    self.text = "vamos;; a cotorrear"
     to_correct = word_tokenize(self.text)
+    st.text(to_correct)
+    
     sentence = []
     for x in range(len(to_correct)):
       sentence.append(to_correct[x])
