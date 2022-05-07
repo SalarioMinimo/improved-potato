@@ -101,7 +101,8 @@ class calculator:
       if self.text[x]==",":
         self.text[x]="."
         
-    c = -1 
+    c = -1
+    counter = 0
     while True:
       try:
         st.text(self.text)
@@ -114,8 +115,10 @@ class calculator:
           self.text[c] = ","
           for x in range(counter-1):
             self.text.insert(c,",")
+            c = -1
+            
       except:
-       break
+        break
             
         
         
