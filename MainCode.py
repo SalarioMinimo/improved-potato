@@ -257,8 +257,8 @@ class calculator:
        counter -= 1
      panner += 1
    st.text(self.text)
-   self.text[index+panner] = ")"
-   self.text.insert(index+panner,")")
+   self.text[index+panner-1] = ")"
+   self.text.insert(index+panner-1,")")
     
   def elevado(self,index):
     del self.text[index]
