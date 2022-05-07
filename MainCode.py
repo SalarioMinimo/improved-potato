@@ -21,8 +21,8 @@ class side_bar:
   def Justificación(self):
     with st.sidebar:
      st.caption("-----")
-     st.subheader("Comprendiendo otra dimensión de las matemáticas.")
-     st.code("Cámara carnal")
+     st.subheader("Aproximándonos a otra dimensión de las matemáticas.")
+     st.text("La notación matemática a la hora de realizar cálculos se puede considerar como engorrosa, especialmente a la hora de usarse con voz, los asistentes como google y alexa pueden hacer operaciones sencillas, pero ¿Si se necesita aumentar la complejidad de las operaciones? "
                 
     
   def Comandos(self):
