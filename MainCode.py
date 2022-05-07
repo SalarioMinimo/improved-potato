@@ -32,9 +32,10 @@ class side_bar:
   def Ejemplos(self):
     with st.sidebar:
      st.markdown("-----")
-     st.title("Pruebas de funcionamiento")
+     st.title("Ctrl + C y Ctrl + V")
      st.subheader("¿De qué es capaz esta calculadora?")
-     st.markdown("Ctrl + C y Ctrl + V")
+     st.text("Raiz septima de un numero imaginario.")
+     st.code("raiz septima de 0.9279, por conjunto de coseno de fraccion de 1.2034 mas 2 por pi por 2 y 7 ,, mas seno de fraccion de 1.2034 mas 2 por pi por 2 y 7, , por i.")
 
   def Funcionamiento(self):
     st.markdown("----")
