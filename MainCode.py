@@ -58,16 +58,18 @@ class str_formatter:
     replace = {"á":"a","é":"e","í":"i","ó":"o","ú":"u"}
     
     self.text = input.lower()
+    for x in range(len(self.text)):
+    if self.text[x]==".":
+      self.text[x]=";"
     for x in replace:
       self.text = self.text.replace(x,replace[x])
-    self.text = "vamos;; a cotorrear"
     to_correct = word_tokenize(self.text)
     st.text(to_correct)
     
     sentence = []
     for x in range(len(to_correct)):
       sentence.append(to_correct[x])
-    
+
     spell = SpellChecker(language=None, case_sensitive=True)
     spell.word_frequency.load_text_file('Dictionary.txt')
     corrections = spell.unknown(sentence)
@@ -100,6 +102,22 @@ class calculator:
     for x in range(len(self.text)):
       if self.text[x]==",":
         self.text[x]="."
+    c = -1 
+    while True:
+      try:
+        c += 1
+        if self.text[c] in self.references:
+          counter += 1
+        elif self.text[c] == ",":
+          counter -= 1
+        elif self.text[c] == ";":
+          self.text[c] = ","
+          for x in range(counter-1):
+            self.text.insert(c,",")
+            
+        
+        
+     
     c = -1
     while True:
       try:
