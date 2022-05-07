@@ -21,8 +21,7 @@ class side_bar:
   def Justificación(self):
     with st.sidebar:
      st.subheader("Comprendiendo otra dimensión de las matemáticas.")
-     st.markdown("Cámara carnal")
-     st.caption("Cámara carnal")
+     st.caption("--------------------")
      st.code("Cámara carnal")
                 
     
