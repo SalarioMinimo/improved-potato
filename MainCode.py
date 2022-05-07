@@ -38,7 +38,7 @@ class side_bar:
 
   def Funcionamiento(self):
     st.title("¿Cómo se utiliza esta calculadora?")
-    st.markdown("Su funcionamiento gira en torno a dos cosas, operadores y funciones; en el caso de los operadores tenemos el ejemplo siguiente:")
+    st.markdown("Su funcionamiento gira en torno a funciones y operadores, los cuales son los siguientes:")
     st.text("string:")
     st.code("2 mas 2 menos 3 por 4")
     st.text("traducción")
