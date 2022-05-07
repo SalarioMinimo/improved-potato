@@ -213,7 +213,7 @@ class calculator:
     return self.text
  
 
-
+Documentación = side_bar()
 texto=st.text_input(label="muerte al capital")
 texto = str(str_formatter(texto))
 texto
