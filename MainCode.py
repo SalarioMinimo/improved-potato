@@ -44,6 +44,7 @@ class side_bar:
     st.code("2 mas 2 menos 3 por 4")
     st.text("traducción")
     st.code("2 + 2 - 3 * 4")
+    st.markdown("Nótese que simplemente se reemplaza la palabra con el operador, lo cual sirve para elaborar ecuaciones matemáticas simples, si se necesita evaluar algo en concreto se puede usar la función Conjunto")
 
 
 
