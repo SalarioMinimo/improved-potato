@@ -248,13 +248,9 @@ class calculator:
    self.text.insert(index+panner+2,"(")
    index = index + panner + 2 
    
-   counter = 0
+   counter = 1
    panner= 1
-   if self.text[index+panner] in self.references:
-     counter = 1
-     panner = 2
-   else:
-     panner = 2
+
    while counter != 0:
      if self.text[index+panner] in self.references:
        counter += 1
