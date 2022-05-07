@@ -11,7 +11,7 @@ class side_bar:
  
   def __init__(self):
     with st.sidebar:
-      selection = {"Justificación":self.Justificación,"Comandos":self.Comandos,"¿Cómo funciona?":self.Ejemplos}
+      selection = {"Justificación":self.Justificación,"¿Cómo funciona?":self.Funcionamiento,"Ejemplos":self.Ejemplos}
       st.title("Manual de uso")
       st.subheader("Aquí está toda la información que necesitas para comenzar.")
       
