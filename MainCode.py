@@ -59,8 +59,8 @@ class str_formatter:
     
     self.text = input.lower()
     for x in range(len(self.text)):
-    if self.text[x]==".":
-      self.text[x]=";"
+      if self.text[x]==".":
+        self.text[x]=";"
     for x in replace:
       self.text = self.text.replace(x,replace[x])
     to_correct = word_tokenize(self.text)
@@ -102,6 +102,7 @@ class calculator:
     for x in range(len(self.text)):
       if self.text[x]==",":
         self.text[x]="."
+        
     c = -1 
     while True:
       try:
