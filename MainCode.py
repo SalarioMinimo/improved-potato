@@ -256,7 +256,6 @@ class calculator:
      if self.text[index+panner] == ";":
        counter -= 1
      panner += 1
-   st.text(self.text)
    self.text[index+panner-1] = ")"
    self.text.insert(index+panner-1,")")
     
