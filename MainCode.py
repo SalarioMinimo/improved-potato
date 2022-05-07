@@ -65,6 +65,8 @@ class side_bar:
     st.code("Seno de 5 por 5,")
     st.text("traducción:")
     st.code(" Sin ( 5 * 5 )")
+    st.markdown("Esta tiene una variante para cada función trigonométrica.")
+    st.caption("Valores admitidos: Seno, Coseno, Tangente, Arcoseno, Arcocoseno, Arcotangente")
     
 
 
