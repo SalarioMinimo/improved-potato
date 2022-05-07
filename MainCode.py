@@ -19,7 +19,7 @@ class side_bar:
       selection[B_Selection]()
 
   def Justificación(self):
-    with st.sidebar():
+    with st.sidebar:
      st.subheader("Comprendiendo otra dimensión de las matemáticas.")
     
   def Comandos(self):
