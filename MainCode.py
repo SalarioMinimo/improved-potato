@@ -103,7 +103,6 @@ class calculator:
     counter = 0
     while True:
       try:
-        st.text(self.text)
         c += 1
         if self.text[c] in self.references:
           counter += 1
