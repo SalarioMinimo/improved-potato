@@ -37,7 +37,7 @@ class side_bar:
      st.markdown("Ctrl + C y Ctrl + V")
 
   def Funcionamiento(self):
-    st.markdown("uwu")
+    st.text("jala así")
 
 
 
