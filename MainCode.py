@@ -38,19 +38,24 @@ class side_bar:
 
   def Funcionamiento(self):
     st.title("¿Cómo se utiliza esta calculadora?")
-    st.markdown("Su funcionamiento gira en torno a funciones y operadores, los cuales son los siguientes:")
-    st.subheader("Operadores básicos.")
+    st.markdown("Esta calculadora gira en torno a un sistema de operadores y funciones, cada una con una sintaxis específica para tomar sus valores.")
+    
+    st.subheader("Operadores.")
+    st.markdown("Son los más intuitivos de utilizar, símplemente toman la palabra y la traducen su operador correspondiente.")
     st.text("string:")
     st.code("2 mas 2 menos 3 por 4")
     st.text("traducción:")
     st.code("2 + 2 - 3 * 4")
-    st.markdown("Nótese que simplemente se reemplaza la palabra con el operador, lo cual sirve para elaborar ecuaciones matemáticas simples, si se necesita evaluar algo en concreto se puede usar la función Conjunto")
+    st.markdown("Con estos se harán los valores que van dentro de las funciones.")
+    
+    st.title("Funciones:")
+    st.markdown("Estos son un poco más complejos, pero intuitivos de utilizar, todos comienzan con una palabra que define lo que se va a hacer, después reciben sus argumentos y para denotar que se terminó de introducir datos, se tiene que agregar una coma después de los datos que quieres que tome en cuenta la función.")
     st.subheader("Función: Conjunto")
     st.markdown("Se traduce en un parentesis, con el fin de evaluar varios términos primero.")
     st.text("string:")
     st.code("Conjunto de 2 mas 3, por 6")
     st.text("traducción:")
-    st.code("( 2 + 3) * 6")
+    st.code("( 2 + 3 ) * 6")
 
 
 
