@@ -60,7 +60,12 @@ class side_bar:
     st.markdown("Nótese que para finalizar la introducción de datos utilizamos una coma.")
     
     st.subheader("Función: Trigonométrica")
-    st.markdown("Permite establecer funciones trigonométricas.")
+    st.markdown("Permite utilizar funciones trigonométricas.")
+    st.text("string:")
+    st.code("Seno de 5 por 5,")
+    st.text("traducción:")
+    st.code(" Sin ( 5 * 5 )")
+    
 
 
 
