@@ -149,6 +149,36 @@ class calculator:
     self.text.insert(index+panner,")")
     self.text.insert(index+1,"(")
     
+  def fraccion(self,index):
+   self.text[index] = "("
+   self.text[index+1] = "("
+   panner=0
+   while True:
+     if not self.text[index+panner] == "y":
+       panner += 1
+     else:
+       Break
+   self.text[index+panner] = "/"
+   self.text.insert(index+panner,")")
+   self.text.insert(index+panner+2,"(")
+   index = index + panner + 2 
+   
+   counter = 0
+   panner= 1
+   if self.text[index+panner] in self.references:
+     counter = 1
+     panner = 2
+   else:
+     panner = 2
+   while counter != 0:
+     if self.text[index+panner] in self.references:
+       counter += 1
+     if self.text[index+panner] == ".":
+       counter -= 1
+     panner += 1
+   self.text[index+panner] = ")"
+   
+    
   def elevado(self,index):
     del self.text[index]
     self.text[index] = "**"
