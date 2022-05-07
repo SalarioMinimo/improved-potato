@@ -67,7 +67,11 @@ class side_bar:
     st.code("Fracción de 8 y 5,")
     st.text("traducción:")
     st.code("( (8) / (5) )")
-    st.markdown("Puede recibir expresiones complejas siempre y cuando separes el numerador y denominador con la letra _y_")
+    st.markdown("Puede recibir expresiones complejas siempre y cuando separes el numerador y denominador con la letra _y_.")
+    st.text("string:")
+    st.code("Fracción de seno de 5, y raiz cuadrada de 2, por 5,")
+    st.text("traducción:")
+    st.code("((sin (5)) / (root (2, 7)))")
     
     st.subheader("Función: Trigonométrica")
     st.markdown("Permite utilizar funciones trigonométricas.")
@@ -83,12 +87,14 @@ class side_bar:
     st.text("string:")
     st.code("raiz cubica de 5,")
     st.text("traducción:")
-    st.code("root( 3 , 5 )")
+    st.code("root( 5 , 3 )")
     st.markdown("Las funciones también pueden ir dentro de otras funciones siempre y te asegures de cerrar todas con una coma.")
     st.text("string:")
     st.code("raiz septima de seno de 23,,")
     st.text("traducción:")
-    st.code("root( 7 , sin( 23 ) )")
+    st.code("root (sin (23), 7)")
+    st.caption("Valores admitidos: cuadrada, cúbica, segunda, tercera, cuarta, quinta, sexta, septima, octava, novena, decima")
+    st.caption("Tambien se puede utilizar un número para ir más alla de estos ordinales.")
 
 
 
