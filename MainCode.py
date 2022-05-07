@@ -11,11 +11,11 @@ class side_bar:
  
   def __init__(self):
     with st.sidebar:
-      selection = {"Justificación":self.Justificación,"Comandos":self.Comandos,"Ejemplos":self.Ejemplos}
+      selection = {"Justificación":self.Justificación,"Comandos":self.Comandos,"¿Cómo funciona?":self.Ejemplos}
       st.title("Manual de uso")
       st.subheader("Aquí está toda la información que necesitas para comenzar.")
       
-      B_Selection = st.radio("Selecciona un apartado",("Justificación", "Ejemplos" ,"Comandos"))
+      B_Selection = st.radio("Selecciona un apartado",("Justificación", "Ejemplos" ,"¿Cómo funciona?"))
       selection[B_Selection]()
 
   def Justificación(self):
@@ -36,7 +36,7 @@ class side_bar:
      st.subheader("¿De qué es capaz esta calculadora?")
      st.markdown("Ctrl + C y Ctrl + V")
 
-  def Comandos(self):
+  def Funcionamiento(self):
     st.markdown("uwu")
 
 
