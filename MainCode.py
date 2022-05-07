@@ -150,7 +150,7 @@ class calculator:
     
     self.send = ""
     self.text=word_tokenize(input)
-    self.functions = {"mas":self.mas, "menos":self.menos, "por":self.por, "sobre":self.sobre, "raiz":self.raiz, "seno":self.trig,
+    self.functions = {"mas":self.mas, "menos":self.menos, "por":self.por, "raiz":self.raiz, "seno":self.trig,
                       "coseno":self.trig, "tangente":self.trig, "arcoseno":self.trig, "arcocoseno":self.trig, "arcotangente":self.trig,
                      "entre":self.entre,"conjunto":self.conjunto,"elevado":self.elevado,"fraccion":self.fraccion}
     self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan","arcoseno":"asin","arcocoseno":"acos","arcotangente":"atan"}
@@ -276,13 +276,7 @@ class calculator:
       if self.text[index+panner] == ".":
         counter -= 1
     self.text[index+panner]=")"
-    self.text[index+1] = "("
-   
-
-  def sobre(self,index):
-    self.text[index]="/"
-    self.text.insert(index-1,"(")
-    self.text.insert(index+3,")")
+    self.text[index+1] = "("-
   
   def raiz(self,index):
     self.text[index]="root"
