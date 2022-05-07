@@ -13,7 +13,7 @@ class side_bar:
     with st.sidebar:
       selection = {"Justificación":self.Justificación,"Comandos":self.Comandos,"Ejemplos":self.Ejemplos}
       st.title("Manual de uso")
-      st.subheader("Bienvenido a mi calculadora, aquí está toda la información que debes de saber para usarla.")
+      st.subheader("Aquí está toda la información que necesitas para hablar ecuaciones.")
       
       B_Selection = st.radio("Selecciona un apartado",("Justificación", "Ejemplos" ,"Comandos"))
       selection[B_Selection]()
@@ -252,7 +252,7 @@ class calculator:
  
 
 Documentación = side_bar()
-texto=st.text_input(label="muerte al capital")
+texto=st.text_input(label="Escribe tu ecuación.")
 texto = str(str_formatter(texto))
 st.subheader(texto)
 imprime=str(calculator(texto))
