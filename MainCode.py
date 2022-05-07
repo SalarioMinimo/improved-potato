@@ -37,7 +37,7 @@ class side_bar:
      st.markdown("Ctrl + C y Ctrl + V")
 
   def Funcionamiento(self):
-    st.markdown("--------------------------")
+    st.markdown("----")
     st.title("¿Cómo se utiliza esta calculadora?")
     st.markdown("Esta calculadora gira en torno a un sistema de operadores y funciones, cada una con una sintaxis específica para tomar sus valores.")
     
@@ -74,10 +74,13 @@ class side_bar:
     st.text("string:")
     st.code("raiz cubica de 5,")
     st.text("traducción:")
-    st.code("root(3,5)")
+    st.code("root( 3 , 5 )")
     st.markdown("Las funciones también pueden ir dentro de otras funciones siempre y te asegures de cerrar todas con una coma.")
     st.code()
-    
+    st.text("string:")
+    st.code("raiz septima del seno de 23,,")
+    st.text("traducción:")
+    st.code("root( 7 , sin( 23 ) )")
 
 
 
