@@ -255,7 +255,7 @@ class calculator:
 Documentación = side_bar()
 texto=st.text_input(label="muerte al capital")
 texto = str(str_formatter(texto))
-texto
+st.subheader(texto)
 imprime=str(calculator(texto))
 imprime
 tremendo = sympify(imprime,evaluate = false)
