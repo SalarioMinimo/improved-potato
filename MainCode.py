@@ -37,7 +37,7 @@ class side_bar:
      st.markdown("Ctrl + C y Ctrl + V")
 
   def Funcionamiento(self):
-    st.title("--------------------------")
+    st.markdown("--------------------------")
     st.title("¿Cómo se utiliza esta calculadora?")
     st.markdown("Esta calculadora gira en torno a un sistema de operadores y funciones, cada una con una sintaxis específica para tomar sus valores.")
     
