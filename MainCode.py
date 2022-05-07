@@ -62,7 +62,6 @@ class str_formatter:
     for x in replace:
       self.text = self.text.replace(x,replace[x])
     to_correct = word_tokenize(self.text)
-    
     sentence = []
     for x in range(len(to_correct)):
       sentence.append(to_correct[x])
@@ -75,7 +74,11 @@ class str_formatter:
    
     for x in ordinal:
       self.text = self.text.replace(x,ordinal[x])
-    
+    self.text = word_tokenize(self.text)
+    for x in range(len(self.text)):
+      if self.text[x] == ".":
+        self.text[x] = ":"
+    self.text = TreebankWordDetokenizer().detokenize(self.text)
 
 
 
