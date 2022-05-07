@@ -113,7 +113,7 @@ class calculator:
     self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente","raiz","elevado","fraccion")
 
      
-    c = -1’
+    c = -1
     counter = 0
     while True:
       try:
