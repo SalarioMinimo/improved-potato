@@ -47,6 +47,7 @@ class side_bar:
     st.text("traducción:")
     st.code("2 + 2 - 3 * 4")
     st.markdown("Con estos se harán los valores que van dentro de las funciones.")
+    st.caption("mas,menos,por")
     
     st.title("Funciones:")
     st.markdown("Estos son un poco más complejos, pero intuitivos de utilizar, todos comienzan con una palabra que define lo que se va a hacer, después reciben sus argumentos y para denotar que se terminó de introducir datos, se tiene que agregar una coma después de los datos que quieres que tome en cuenta la función.")
