@@ -98,9 +98,7 @@ class calculator:
     self.trigonometric = {"seno":"sin","coseno":"cos","tangente":"tan","arcoseno":"asin","arcocoseno":"acos","arcotangente":"atan"}
     self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente","raiz","elevado","fraccion")
     for x in range(len(self.text)):
-      if self.text[x]==",":
-        self.text[x]="."
-        
+     
     c = -1
     counter = 0
     while True:
@@ -116,10 +114,11 @@ class calculator:
           for x in range(counter-1):
             self.text.insert(c,",")
             c = -1
-            
       except:
         break
             
+      if self.text[x]==",":
+        self.text[x]="."
         
         
      
