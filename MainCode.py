@@ -38,6 +38,8 @@ class side_bar:
      st.code("raiz septima de 0.9279, por conjunto de coseno de fraccion de 1.2034 mas 2 por pi por 2 sobre 7 ,, mas seno de fraccion de 1.2034 mas 2 por pi por 2 sobre 7, , por i.")
      st.text("Constante de equilibrio.")
      st.code("Fraccion de 10 elevado a la 2, por 15 elevado a la 3, sobre 5 elevado a la 2.")
+     st.text("Caida libre.")
+     st.code("raiz cuadrada de fraccion de 2 por 20 sobre 9.8.")
   def Funcionamiento(self):
     st.markdown("----")
     st.title("¿Cómo se utiliza esta calculadora?")
