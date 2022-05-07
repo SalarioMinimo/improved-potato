@@ -22,10 +22,10 @@ class side_bar:
     with st.sidebar:
      st.caption("-----")
      st.subheader("Más humano")
-     st.markdown("Entre más parecido es un sistema simbólico al lenguaje natural, es mejor, puesto que utilizarlo será más parecido a hablar y como humanos somos expertos en ello.")
-     st.markdown("Por esa razón elaboré un traductor-calculadora, la cual toma un texto con una sintaxis que aunque no es flexible como el lenguaje natural, si utiliza una representación simbólica muy familiar con una estructura más amigable para ser escrito en una sola linea.")
-     st.markdown("En esta primera iteración del programa, solo ataca los aspectos básicos de representar la aritmetica, con un pequeño corrector de textos, pero es suficiente para llevar a cabo operaciones basntante complejas.")
-     st.markdown("El siguiente paso sería hacer un speech-to-text hecho a la medida con las necesidades del programa y mejorar la sintaxis que utiliza.")
+     st.markdown("Entre más parecido es un sistema simbólico al lenguaje natural, es mejor, ya que su uso será casi tan sencillo como el mero hecho de hablar.")
+     st.markdown("Por esa razón elaboré un traductor-calculadora, la cual toma un texto con una sintaxis que aunque estricta para evitar ambigüedades, utiliza palabras y símbolos lingüísticos que ya conocemos, además de una estructura más amigable y familiar para ser escrita en una sola línea.")
+     st.markdown("Esta primera iteración del programa abarca los aspectos básicos de la aritmética, lo que permite llevar a cabo los principales tipos de operaciones matemáticas utilizadas en diversas disciplinas.")
+     st.markdown("El siguiente paso sería elaborar una función  speech-to-text hecho a la medida con las necesidades del programa y perfeccionar la sintaxis que maneja.")
      st.markdown("En esta barra hay una pequeña guia con las funciones que esta calculadora tiene y ejemplos de lo que es capaz de hacer.")
 
     
