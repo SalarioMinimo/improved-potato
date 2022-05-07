@@ -76,7 +76,6 @@ class side_bar:
     st.text("traducción:")
     st.code("root( 3 , 5 )")
     st.markdown("Las funciones también pueden ir dentro de otras funciones siempre y te asegures de cerrar todas con una coma.")
-    st.code()
     st.text("string:")
     st.code("raiz septima del seno de 23,,")
     st.text("traducción:")
