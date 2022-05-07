@@ -38,8 +38,11 @@ class side_bar:
 
   def Funcionamiento(self):
     st.title("¿Cómo se utiliza esta calculadora?")
-    st.markdown("Su funcionamiento gira en torno a algo parecido a funciones, primero se llama a una función y después se sigue la sintaxis para que el programa pueda reordenar los valores; por ejemplo:")
-    st.code("Seno de 25.")
+    st.markdown("Su funcionamiento gira en torno a dos cosas, operadores y funciones; en el caso de los operadores tenemos el ejemplo siguiente:")
+    st.text("string:")
+    st.code("2 mas 2 menos 3 por 4")
+    st.text("traducción")
+    st.code("2 + 2 - 3 * 4")
 
 
 
