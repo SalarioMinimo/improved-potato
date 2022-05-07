@@ -13,7 +13,7 @@ class side_bar:
     with st.sidebar:
       selection = {"Justificación":self.Justificación,"Comandos":self.Comandos,"Ejemplos":self.Ejemplos}
       st.title("Manual de uso")
-      st.subheader("Aquí está toda la información que necesitas para hablar ecuaciones.")
+      st.subheader("Aquí está toda la información que necesitas para comenzar.")
       
       B_Selection = st.radio("Selecciona un apartado",("Justificación", "Ejemplos" ,"Comandos"))
       selection[B_Selection]()
@@ -22,8 +22,8 @@ class side_bar:
     with st.sidebar:
      st.caption("-----")
      st.subheader("Más humano")
-     st.markdown("Entre más parecido es un sistema simbólico al lenguaje natural, es mejor, ya que su uso será casi tan sencillo como el mero hecho de hablar.")
-     st.markdown("Por esa razón elaboré un traductor-calculadora, la cual toma un texto con una sintaxis que aunque estricta para evitar ambigüedades, utiliza palabras y símbolos lingüísticos que ya conocemos, además de una estructura más amigable y familiar para ser escrita en una sola línea.")
+     st.markdown("Entre más parecido es un sistema simbólico al lenguaje natural, es mejor, porque su uso será casi tan sencillo como el mero acto de hablar.")
+     st.markdown("Por esa razón elaboré un traductor-calculadora, la cual toma un texto con una sintaxis estricta con el fin de evitar ambigüedades, pero a su vez utiliza palabras y símbolos lingüísticos que ya conocemos, además de una estructura más amigable y familiar para ser escrita en una sola línea.")
      st.markdown("Esta primera iteración del programa abarca los aspectos básicos de la aritmética, lo que permite llevar a cabo los principales tipos de operaciones matemáticas utilizadas en diversas disciplinas.")
      st.markdown("El siguiente paso sería elaborar una función  speech-to-text hecho a la medida con las necesidades del programa y perfeccionar la sintaxis que maneja.")
      st.markdown("En esta barra hay una pequeña guia con las funciones que esta calculadora tiene y ejemplos de lo que es capaz de hacer.")
