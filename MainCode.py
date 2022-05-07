@@ -62,7 +62,6 @@ class str_formatter:
     for x in replace:
       self.text = self.text.replace(x,replace[x])
     to_correct = word_tokenize(self.text)
-    st.text(to_correct)
     
     sentence = []
     for x in range(len(to_correct)):
