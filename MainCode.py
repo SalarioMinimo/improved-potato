@@ -52,6 +52,7 @@ class side_bar:
     
     st.title("Funciones:")
     st.markdown("Estos son un poco más complejos, pero intuitivos de utilizar, todos comienzan con una palabra que define lo que se va a hacer, después reciben sus argumentos y para denotar que se terminó de introducir datos, se tiene que agregar una coma después de los datos que quieres que tome en cuenta la función.")
+    
     st.subheader("Función: Conjunto")
     st.markdown("Se traduce en un parentesis, con el fin de evaluar varios términos primero.")
     st.text("string:")
@@ -59,6 +60,13 @@ class side_bar:
     st.text("traducción:")
     st.code("( 2 + 3 ) * 6")
     st.markdown("Nótese que para finalizar la introducción de datos utilizamos una coma.")
+    
+    st.subheader("Función: Fracción")
+    st.markdown("Recibe dos valores y los acomoda en forma de división.")
+    st.text("string:")
+    st.code("Fracción de 8 y 5,")
+    st.text("traducción:")
+    st.code("( (8) / (5) )")
     
     st.subheader("Función: Trigonométrica")
     st.markdown("Permite utilizar funciones trigonométricas.")
@@ -80,7 +88,6 @@ class side_bar:
     st.code("raiz septima de seno de 23,,")
     st.text("traducción:")
     st.code("root( 7 , sin( 23 ) )")
-
 
 
 
