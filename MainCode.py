@@ -21,12 +21,12 @@ class side_bar:
   def Justificación(self):
     with st.sidebar:
      st.caption("-----")
-     st.subheader("Viendo con otro lente.")
-     st.markdown("Ciertamente los humanos funcionamos mejor con una base estructural similar al lenguaje natural, nos resulta más sencillo dictarle un comando a un asistente para llevar a cabo una acción que enfrentarnos ante el mar de símbolos que representa hacer una acción por más nimia que pueda ser.")
-     st.markdown("La notación matemática a la hora de realizar cálculos se puede considerar como engorrosa, y si se utilizan símbolos linguísticos la complejidad aumenta, los asistentes como google y alexa pueden hacer operaciones aritmeticas sencillas, pero ¿Si se necesita aumentar la complejidad de las operaciones?")
-     st.markdown("Para ese caso hice este traductor-calculadora, la cual toma tu texto, y lo transforma a una notación que puede entender Sympy para representarlo y evaluarlo.")
-     st.markdown("Por la forma en la que las matemáticas y este traductor funcionan, la sintaxis para utilizar este programa es muy específica, pero según las condiciones es más eficiente que simplemente utilizar una calculadora convencional.")
-     st.markdown("Este programa está a una buena implementación de speech-to-text hecho a la medida junto al refinamiento de sus algoritmos, para ser un programa que pueda ser considerado como competente.")
+     st.subheader("Más humano")
+     st.markdown("Entre más parecido es un sistema simbólico al lenguaje natural, es mejor, puesto que utilizarlo será más parecido a hablar y como humanos somos expertos en ello.")
+     st.markdown("Por esa razón elaboré un traductor-calculadora, la cual toma un texto con una sintaxis que aunque no es flexible como el lenguaje natural, si utiliza una representación simbólica muy familiar con una estructura más amigable para ser escrito en una sola linea.")
+     st.markdown("En esta primera iteración del programa, solo ataca los aspectos básicos de representar la aritmetica, con un pequeño corrector de textos, pero es suficiente para llevar a cabo operaciones basntante complejas.")
+     st.markdown("El siguiente paso sería hacer un speech-to-text hecho a la medida con las necesidades del programa y mejorar la sintaxis que utiliza.")
+     st.markdown("En esta barra hay una pequeña guia con las funciones que esta calculadora tiene y ejemplos de lo que es capaz de hacer.")
 
     
   def Ejemplos(self):
