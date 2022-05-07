@@ -276,7 +276,7 @@ class calculator:
       if self.text[index+panner] == ".":
         counter -= 1
     self.text[index+panner]=")"
-    self.text[index+1] = "("-
+    self.text[index+1] = "("
   
   def raiz(self,index):
     self.text[index]="root"
