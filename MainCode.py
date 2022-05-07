@@ -35,8 +35,8 @@ class side_bar:
      st.subheader("¿De qué es capaz esta calculadora?")
      st.markdown("Ctrl + C y Ctrl + V")
 
- def Comandos(self):
-   st.markdown("uwu")
+  def Comandos(self):
+    st.markdown("uwu")
 
 
 
