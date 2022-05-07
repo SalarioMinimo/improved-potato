@@ -35,7 +35,7 @@ class side_bar:
      st.title("Ctrl + C y Ctrl + V")
      st.subheader("¿De qué es capaz esta calculadora?")
      st.text("Raiz septima de un numero imaginario.")
-     st.code("raiz septima de 0.9279, por conjunto de coseno de fraccion de 1.2034 mas 2 por pi por 2 y 7 ,, mas seno de fraccion de 1.2034 mas 2 por pi por 2 y 7, , por i.")
+     st.code("raiz septima de 0.9279, por conjunto de coseno de fraccion de 1.2034 mas 2 por pi por 2 sobre 7 ,, mas seno de fraccion de 1.2034 mas 2 por pi por 2 sobre 7, , por i.")
 
   def Funcionamiento(self):
     st.markdown("----")
@@ -65,12 +65,12 @@ class side_bar:
     st.subheader("Función: Fracción")
     st.markdown("Recibe dos valores y los acomoda en forma de división.")
     st.text("string:")
-    st.code("Fracción de 8 y 5,")
+    st.code("Fracción de 8 sobre 5,")
     st.text("traducción:")
     st.code("( (8) / (5) )")
-    st.markdown("Puede recibir expresiones complejas siempre y cuando separes el numerador y denominador con la letra _y_.")
+    st.markdown("Puede recibir expresiones complejas siempre y cuando separes el numerador y denominador con la palabra _sobre_.")
     st.text("string:")
-    st.code("Fracción de seno de 5, y raiz cuadrada de 2, por 5,")
+    st.code("Fracción de seno de 5, sobre raiz cuadrada de 2, por 5,")
     st.text("traducción:")
     st.code("((sin (5)) / (root (2, 7)))")
     
