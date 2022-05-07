@@ -19,7 +19,8 @@ class side_bar:
       selection[B_Selection]()
 
   def Justificación(self):
-    st.sidebar.text("Quizás funciona")
+    with st.sidebar():
+     st.subheader("Comprendiendo otra dimensión de las matemáticas.")
     
   def Comandos(self):
     st.sidebar.text("Funcionará¿")
