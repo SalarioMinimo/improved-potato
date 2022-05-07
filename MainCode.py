@@ -67,6 +67,7 @@ class side_bar:
     st.code("Fracción de 8 y 5,")
     st.text("traducción:")
     st.code("( (8) / (5) )")
+    st.markdown("Puede recibir expresiones complejas siempre y cuando separes el numerador y denominador con la letra _y_")
     
     st.subheader("Función: Trigonométrica")
     st.markdown("Permite utilizar funciones trigonométricas.")
