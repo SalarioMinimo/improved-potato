@@ -57,6 +57,10 @@ class side_bar:
     st.code("Conjunto de 2 mas 3, por 6")
     st.text("traducción:")
     st.code("( 2 + 3 ) * 6")
+    st.markdown("Nótese que para finalizar la introducción de datos utilizamos una coma.")
+    
+    st.subheader("Función: Trigonométrica")
+    st.markdown("Permite establecer funciones trigonométricas.")
 
 
 
