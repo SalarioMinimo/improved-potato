@@ -23,7 +23,8 @@ class side_bar:
      st.caption("-----")
      st.subheader("Aproximándonos a otra dimensión de las matemáticas.")
      st.markdown("La notación matemática a la hora de realizar cálculos se puede considerar como engorrosa, especialmente a la hora de usarse con voz, los asistentes como google y alexa pueden hacer operaciones sencillas, pero ¿Si se necesita aumentar la complejidad de las operaciones?")
-                
+     st.markdown("Para ese caso hice este traductor-calculadora, la cual toma tu texto, y lo transforma a una notación que puede entender Sympy para representarlo y evaluarlo.")
+     st.markdown("Por la forma en la que las matemáticas y este traductor funcionan, la sintaxis para utilizar este programa es muy específica, pero según las condiciones es más eficiente que simplemente utilizar una calculadora convencional.")
     
   def Comandos(self):
     st.sidebar.text("Funcionará¿")
