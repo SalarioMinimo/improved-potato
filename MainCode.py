@@ -37,6 +37,7 @@ class side_bar:
      st.markdown("Ctrl + C y Ctrl + V")
 
   def Funcionamiento(self):
+    st.title("-----")
     st.title("¿Cómo se utiliza esta calculadora?")
     st.markdown("Esta calculadora gira en torno a un sistema de operadores y funciones, cada una con una sintaxis específica para tomar sus valores.")
     
@@ -67,6 +68,15 @@ class side_bar:
     st.code(" Sin ( 5 * 5 )")
     st.markdown("Esta tiene una variante para cada función trigonométrica.")
     st.caption("Valores admitidos: Seno, Coseno, Tangente, Arcoseno, Arcocoseno, Arcotangente")
+    
+    st.subheader("Función: Raiz")
+    st.markdown("Permite sacar la raiz de una expresión, tiene una notación especial, primero se tiene que especificar el orden de la raiz y después los valores a utilizar de la siguintee manera")
+    st.text("string:")
+    st.code("raiz cubica de 5,")
+    st.text("traducción:")
+    st.code("root(3,5)")
+    st.markdown("Las funciones también pueden ir dentro de otras funciones siempre y te asegures de cerrar todas con una coma.")
+    st.code()
     
 
 
