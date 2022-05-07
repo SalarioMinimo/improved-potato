@@ -7,6 +7,38 @@ import annotated_text
 from spellchecker import SpellChecker
 nltk.download("punkt")
 
+class side_bar:
+ 
+  def __init__(self):
+    with st.sidebar:
+      selection = {"Justificación":self.Justificación,"Comandos":self.Comandos,"Ejemplos":self.Ejemplos}
+      st.title("Manual de uso")
+      st.subheader("Bienvenido a mi calculadora, aquí está toda la información que debes de saber para usarla.")
+      
+      B_Selection = st.radio("Selecciona un apartado",("Justificación", "Comandos", "Ejemplos"))
+      selection[B_Selection]()
+
+  def Justificación(self):
+    st.sidebar.text("Quizás funciona")
+    
+  def Comandos(self):
+    st.sidebar.text("Funcionará¿")
+    
+  def Ejemplos(self):
+    st.sidebar.text("Esta funcionando")
+
+
+
+
+
+
+
+
+
+
+
+
+
 class str_formatter:
 
   def __init__(self,input):
