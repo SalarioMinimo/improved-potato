@@ -42,9 +42,15 @@ class side_bar:
     st.subheader("Operadores básicos.")
     st.text("string:")
     st.code("2 mas 2 menos 3 por 4")
-    st.text("traducción")
+    st.text("traducción:")
     st.code("2 + 2 - 3 * 4")
     st.markdown("Nótese que simplemente se reemplaza la palabra con el operador, lo cual sirve para elaborar ecuaciones matemáticas simples, si se necesita evaluar algo en concreto se puede usar la función Conjunto")
+    st.subheader("Función: Conjunto")
+    st.markdown("Se traduce en un parentesis, con el fin de evaluar varios términos primero.")
+    st.text("string:")
+    st.code("Conjunto de 2 mas 3 menos 6.")
+    st.text("traducción:")
+    st.code("( 2 + 3 - 6 )")
 
 
 
@@ -107,7 +113,7 @@ class calculator:
     self.references = ("seno","coseno","tangente","arcoseno","arcocoseno","arcotangente","raiz","elevado","fraccion")
 
      
-    c = -1
+    c = -1’
     counter = 0
     while True:
       try:
