@@ -246,7 +246,7 @@ class calculator:
    self.text[index+panner] = "/"
    self.text.insert(index+panner,")")
    self.text.insert(index+panner+2,"(")
-   index = index + panner
+   index = index + panner + 3
    
    counter = 1
    panner=0
