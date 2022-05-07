@@ -58,9 +58,7 @@ class str_formatter:
     replace = {"á":"a","é":"e","í":"i","ó":"o","ú":"u"}
     
     self.text = input.lower()
-    for x in range(len(self.text)):
-      if self.text[x]==".":
-        self.text[x]=";"
+    self.text = self.text.replace(";",".")
     for x in replace:
       self.text = self.text.replace(x,replace[x])
     to_correct = word_tokenize(self.text)
