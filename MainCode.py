@@ -323,6 +323,8 @@ if not texto == "":
   st.markdown(texto)
   imprime=str(calculator(texto))
   tremendo = sympify(imprime,evaluate = false)
+  st.text("Representación simbólica:")
   tremendo
   resultado=N(tremendo)
+  st.text("Evaluación:")
   resultado
