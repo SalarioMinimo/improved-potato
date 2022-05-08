@@ -44,7 +44,7 @@ class side_bar:
      st.text("Constante de equilibrio.")
      st.code("Fraccion de 10 elevado a la 2, por 15 elevado a la 3, sobre 5 elevado a la 2.")
      st.text("Caida libre.")
-     st.code("raiz cuadrada de fraccion de 2 por 20 sobre 9.8.")
+     st.code("raiz cuadrada de fraccion de 2 por 20 sobre gravedad.")
      st.text("Anidación de raices.")
      st.code("raiz cuadrada de raiz cubica de raiz cuarta de raiz quinta de raiz sexta de raiz septima de raiz octava de raiz novena de raiz decima de 7.")
     
