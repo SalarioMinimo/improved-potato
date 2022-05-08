@@ -19,7 +19,7 @@ class side_bar:
       selection[B_Selection]()
 
   def Introducción(self):
-   with.st.sidebar:
+   with st.sidebar:
     st.title("Una calculadora basada en texto.")
     st.markdown("Este es un programa que traduce de comandos matemáticos escritos con palabras a un código que fácilmente puede entender Sympy para resolverlo.")
     st.markdown("La intención es crear una forma más accesible de utilizar las matemáticas, con la cual se pueda cambiar la manera en la que se estos conceptos se entienden y se abstraen, además de ser los primeros pasos para una calculadora completamente basada en texto como una alternativa más sencilla de utilizar y comprender.")
