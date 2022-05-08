@@ -32,7 +32,6 @@ class side_bar:
      st.markdown("Por esa razón elaboré un traductor-calculadora, la cual toma un texto con una sintaxis estricta con el fin de evitar ambigüedades, pero a su vez utiliza palabras y símbolos lingüísticos que ya conocemos, además de una estructura más amigable y familiar para ser escrita en una sola línea.")
      st.markdown("Esta primera iteración del programa abarca los aspectos básicos de la aritmética, lo que permite llevar a cabo los principales tipos de operaciones matemáticas utilizadas en diversas disciplinas.")
      st.markdown("El siguiente paso sería elaborar una función  speech-to-text hecho a la medida con las necesidades del programa y perfeccionar la sintaxis que maneja.")
-     st.markdown("En esta barra hay una pequeña guia con las funciones que esta calculadora tiene y ejemplos de lo que es capaz de hacer.")
 
     
   def Ejemplos(self):
