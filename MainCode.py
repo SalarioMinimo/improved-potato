@@ -320,7 +320,7 @@ texto=st.text_input(label="Escribe tu ecuación.")
 if not texto == "":
   texto = str(str_formatter(texto))
   st.text("Texto procesado:")
-  st.subheader(texto)
+  st.markdown(texto)
   imprime=str(calculator(texto))
   tremendo = sympify(imprime,evaluate = false)
   tremendo
