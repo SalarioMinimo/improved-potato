@@ -47,7 +47,7 @@ class side_bar:
      st.code("raiz cuadrada de fraccion de 2 por 20 sobre gravedad.")
      st.text("Anidación de raices.")
      st.code("raiz cuadrada de raiz cubica de raiz cuarta de raiz quinta de raiz sexta de raiz septima de raiz octava de raiz novena de raiz decima de 7.")
-    
+     st.markdown("Y lo que puedas necesitar.")
     
     
   def Funcionamiento(self):
