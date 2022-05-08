@@ -56,7 +56,7 @@ class side_bar:
     st.markdown("Esta calculadora gira en torno a un sistema de operadores y funciones, cada una con una sintaxis específica que te voy a mostrar a continuación.")
     
     st.subheader("Operadores.")
-    st.markdown("Son los más intuitivos de utilizar, símplemente toman la palabra y la traducen su operador correspondiente.")
+    st.markdown("Símplemente toman la palabra y la traducen su operador correspondiente, sin ninguna modificación de jerarquía de operaciones.")
     st.text("string:")
     st.code("2 mas 2 menos 3 por 4")
     st.text("traducción:")
@@ -65,7 +65,7 @@ class side_bar:
     st.caption("valores admitidos: mas, menos, por")
     
     st.title("Funciones:")
-    st.markdown("Estos son un poco más complejos, pero intuitivos de utilizar, todos comienzan con una palabra que define lo que se va a hacer, después reciben sus argumentos y para denotar que se terminó de introducir datos, se tiene que agregar una coma después de los datos que quieres que tome en cuenta la función.")
+    st.markdown("Estas modifican la jerarquía de operaciones evaluándose antes interactuar con algo más, todos comienzan con una palabra que define lo que se va a hacer, y después se les proporciona los argumentos a utilizar respetando su sintaxis, al terminar se les agrega una coma _,_ para señalar que hasta ahí debe ser tomado en cuenta. ")
     
     st.subheader("Función: Conjunto")
     st.markdown("Se traduce en un parentesis, con el fin de evaluar varios términos primero.")
