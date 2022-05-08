@@ -126,8 +126,11 @@ class side_bar:
     st.text("Con punto:")
     st.code("raiz quinta de seno de 2.")
 
+    st.subheader("Corrección")
+    st.markdown("El programa cuenta con una pequeña función de corrección de textos, si una palabra la detecta como mal escrita, la corrige automáticamente.")
 
-
+    st.subheader("Valores predefinidos")
+    st.markdown("La calculadora cuenta con algunos valores predefinidos, _gravedad_:valor de gravedad ,_avogadro_:número de avogadro, __pi__:valor de pi")
 
 
 
