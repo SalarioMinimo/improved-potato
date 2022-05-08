@@ -45,10 +45,15 @@ class side_bar:
      st.code("Fraccion de 10 elevado a la 2, por 15 elevado a la 3, sobre 5 elevado a la 2.")
      st.text("Caida libre.")
      st.code("raiz cuadrada de fraccion de 2 por 20 sobre 9.8.")
+     st.text("Anidación de raices.")
+     st.code("raiz cuadrada de raiz cubica de raiz cuarta de raiz quinta de raiz sexta de raiz septima de raiz octava de raiz novena de raiz decima de 7.")
+    
+    
+    
   def Funcionamiento(self):
     st.markdown("----")
     st.title("¿Cómo se utiliza esta calculadora?")
-    st.markdown("Esta calculadora gira en torno a un sistema de operadores y funciones, cada una con una sintaxis específica para tomar sus valores.")
+    st.markdown("Esta calculadora gira en torno a un sistema de operadores y funciones, cada una con una sintaxis específica que te voy a mostrar a continuación.")
     
     st.subheader("Operadores.")
     st.markdown("Son los más intuitivos de utilizar, símplemente toman la palabra y la traducen su operador correspondiente.")
