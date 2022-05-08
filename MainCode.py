@@ -118,8 +118,13 @@ class side_bar:
     st.code("5 ** (3)")
     st.markdown("Se puede utilizar cualquier valor o función dentro de la coma")
     
-
-
+    st.title("Extras")
+    st.subheader("Cierre de funciones.")
+    st.markdown("Cuando hay muchas funciones anidadas y tendrías que escribir varias comas para cerrarlo, puedes símplemente utilizar un punto _._ y cerrará todos los parentesis pendientes.")
+    st.text("Sin punto:")
+    st.code("raiz quinta de seno de 2,,")
+    st.text("Con punto:")
+    st.code("raiz quinta de seno de 2.")
 
 
 
