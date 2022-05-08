@@ -320,9 +320,9 @@ Documentación = side_bar()
 texto=st.text_input(label="Escribe tu ecuación.")
 if not texto == "":
   texto = str(str_formatter(texto))
+  st.text("Texto procesado:")
   st.subheader(texto)
   imprime=str(calculator(texto))
-  imprime
   tremendo = sympify(imprime,evaluate = false)
   tremendo
   resultado=N(tremendo)
