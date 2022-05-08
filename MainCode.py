@@ -11,18 +11,18 @@ class side_bar:
  
   def __init__(self):
     with st.sidebar:
-      selection = {"¿Qué es esto?":self.Introducción,"Justificación":self.Justificación,"¿Cómo funciona?":self.Funcionamiento,"Ejemplos":self.Ejemplos}
+      selection = {"¿Qué es esto?":self.Introducción,"¿Por qué hacerlo?":self.Justificación,"¿Cómo se usa?":self.Funcionamiento,"¿Qué puede hacer?":self.Ejemplos}
       st.title("Manual de uso")
       st.subheader("Aquí está toda la información que necesitas para comenzar.")
       
-      B_Selection = st.radio("Selecciona un apartado",("¿Qué es esto?","Justificación", "Ejemplos" ,"¿Cómo funciona?"))
+      B_Selection = st.radio("Selecciona un apartado",("¿Qué es esto?","¿Qué puede hacer?", "¿Cómo se usa?" ,"¿Por qué hacerlo?"))
       selection[B_Selection]()
 
   def Introducción(self):
    with st.sidebar:
     st.title("Una calculadora basada en texto.")
     st.markdown("Este es un programa que traduce de comandos matemáticos escritos con palabras a un código que fácilmente puede entender Sympy para resolverlo, nace de la necesidad de generar un lenguaje matemático escrito que pueda ser manejado con algo parecido al lenguaje natural, para personas con discapacidad y en programas de reconocimiento de voz y lenguaje.")
-    st.markdown("La intención es crear una forma más accesible de utilizar las matemáticas, con la cual se pueda cambiar la manera en la que se estos conceptos se entienden y se abstraen, facilitando la comprensión matemática, cambiando las lentes con los que se aproximan a los problemas y creando alternativas para generar conicimento.")
+    st.markdown("La intención es crear una forma más accesible de utilizar las matemáticas, con la cual se pueda cambiar la manera en la que se estos conceptos se entienden y se abstraen, facilitando la comprensión matemática, buscando otros acercamientos a los problemas y explorando alternativas para generar conocimento.")
       
   def Justificación(self):
     with st.sidebar:
