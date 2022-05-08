@@ -318,7 +318,7 @@ class calculator:
 
 Documentación = side_bar()
 texto=st.text_input(label="Escribe tu ecuación.")
-if texto == "":
+if not texto == "":
   texto = str(str_formatter(texto))
   st.subheader(texto)
   imprime=str(calculator(texto))
