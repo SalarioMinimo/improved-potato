@@ -11,11 +11,11 @@ class side_bar:
  
   def __init__(self):
     with st.sidebar:
-      selection = {"Justificación":self.Justificación,"¿Cómo funciona?":self.Funcionamiento,"Ejemplos":self.Ejemplos}
+      selection = {"¿Qué es esto?":self.Introducción,"Justificación":self.Justificación,"¿Cómo funciona?":self.Funcionamiento,"Ejemplos":self.Ejemplos}
       st.title("Manual de uso")
       st.subheader("Aquí está toda la información que necesitas para comenzar.")
       
-      B_Selection = st.radio("Selecciona un apartado",("Justificación", "Ejemplos" ,"¿Cómo funciona?"))
+      B_Selection = st.radio("Selecciona un apartado",("¿Qué es esto?","Justificación", "Ejemplos" ,"¿Cómo funciona?"))
       selection[B_Selection]()
 
   def Introducción(self):
