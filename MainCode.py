@@ -170,7 +170,6 @@ class str_formatter:
 
 
   def __str__(self):
-    st.text(self.text)
     return self.text
     
 class calculator:
