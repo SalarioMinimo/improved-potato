@@ -65,7 +65,7 @@ class side_bar:
     st.caption("valores admitidos: mas, menos, por")
     
     st.title("Funciones:")
-    st.markdown("Estas modifican la jerarquía de operaciones evaluándose antes interactuar con algo más, todos comienzan con una palabra que define lo que se va a hacer, y después se les proporciona los argumentos a utilizar respetando su sintaxis, al terminar se les agrega una coma _,_ para señalar que hasta ahí debe ser tomado en cuenta. ")
+    st.markdown("Estas modifican la jerarquía de operaciones evaluándose antes interactuar con algo más, todos comienzan con una palabra que define lo que se va a hacer, y después se les proporciona los argumentos a utilizar respetando su sintaxis, al terminar se les agrega una coma _,_ para señalar que hasta ahí debe ser tomado en cuenta, las funciones son las siguientes. ")
     
     st.subheader("Función: Conjunto")
     st.markdown("Se traduce en un parentesis, con el fin de evaluar varios términos primero.")
