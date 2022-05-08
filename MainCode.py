@@ -318,12 +318,12 @@ class calculator:
 
 Documentación = side_bar()
 texto=st.text_input(label="Escribe tu ecuación.")
-texto = str(str_formatter(texto))
-st.subheader(texto)
-imprime=str(calculator(texto))
-imprime
-tremendo = sympify(imprime,evaluate = false)
-tremendo
-resultado=N(tremendo)
-resultado
-
+if texto == "":
+  texto = str(str_formatter(texto))
+  st.subheader(texto)
+  imprime=str(calculator(texto))
+  imprime
+  tremendo = sympify(imprime,evaluate = false)
+  tremendo
+  resultado=N(tremendo)
+  resultado
